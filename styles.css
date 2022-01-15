@@ -46,6 +46,27 @@
   --z-modal: 1000;
 }
 
+.typing {
+  border-right: 0.1rem solid;
+  width: 36ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(27, end),
+    cursor-blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor-blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --biggest-font-size: 4.5rem;
@@ -74,8 +95,9 @@ body {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   background-color: var(--first-colour-lighten);
-  color: var(--white-color);
+  color: rgb(255, 255, 255);
   overflow-x: hidden;
+  background-image: url();
 }
 
 h1, h2 {
@@ -181,7 +203,7 @@ section{
 
 .nav__link:hover {
   position:relative;
-  color: #484849;
+  color: #ffffff;
 }
 
 .nav__link:hover::after {
@@ -259,6 +281,12 @@ section{
   border-bottom: 1px solid var(--white-color);
 }
 
+
+.home__button:hover{
+  color: black;
+  background-color: white;
+  border-radius: .25rem;
+}
 .home__img {
   position: absolute;
   right: 0;
@@ -383,6 +411,11 @@ section{
   transition: all 0.3s ease;
 }
 
+.card:hover{
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
 .project-title{
   font-size: 22px;
   font-weight: 600;
@@ -428,7 +461,11 @@ section{
   border-bottom: 1px solid var(--white-color);
 }
 
-
+.email-me:hover{
+  color: black;
+  background-color: white;
+  border-radius: .25rem;
+}
 
 /*----- MEDIA QUERIES -----*/
 @media screen and (min-width: 769px) {
