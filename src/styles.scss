@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://allfont.net/allfont.css?fonts=lucida-console);
+@import "bootstrap4.scss";
+
+@font-face {
+    font-family: 'ts_blockbold';
+    src: url('assets/fonts/ts-block/ts_block_bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/ts-block/ts_block_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: 'Lucida Console', "Helvetica Neue", sans-serif;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-family: 'ts_blockbold';
+    // font-size: 4rem;
+    font-size: 4vw;
+    margin: 1.2rem;
+}
+
+.container {
+    margin: 0% 15%;
+    // background-color: rgb(208, 208, 255);
+}
+
+@media only screen and (max-width: 500px) {
+    /* xs */
+    .container {
+      margin: 0;
+    }
+  }

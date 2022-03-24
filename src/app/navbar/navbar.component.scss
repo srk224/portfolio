@@ -1,0 +1,23 @@
+.nav {
+    padding: 1.2rem 0 0.9rem 0;
+    border-bottom: 2px solid #000000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.welcomeBar {
+    font-size: 0.8rem;
+    color: #F5004A;
+    white-space: nowrap;
+    padding: 1rem 0;
+    // animation: welcomebarAnimation 20s linear 0s infinite;
+}
+
+@keyframes welcomebarAnimation {
+    100% { 
+        transform: translateX(-114%);  
+    }
+}
