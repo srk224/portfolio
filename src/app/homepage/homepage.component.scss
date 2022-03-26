@@ -1,0 +1,56 @@
+.container {
+    margin-top: 3%;
+    min-height: 65vh;
+    max-height: 60vh;
+}
+
+// Main text
+.intro {
+    font-size: 1.1rem;
+    padding-left: 20%;
+}
+
+.blurb {
+    font-size: 1.1rem;
+    padding: 0 22%;
+    text-align: center;
+}
+
+// Corner design
+.cornerDesignR, .cornerDesignL {
+    z-index: 0;
+    position: relative;
+    width: 15%;
+}
+
+.cornerDesignL {
+    float: left;
+}
+
+// Icons
+.icons {
+    width: 80%;
+}
+
+// Scroll animation and style
+.arrow {
+    width: 19px;
+}
+
+.scroll {
+    animation: scrollAnimation 1s ease-in-out infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+      transform: translateY(-3px);
+    }
+  
+    50% {
+      transform: translateY(3px);
+    }
+  
+    100% {
+      transform: translateY(-3px);
+    }
+  }

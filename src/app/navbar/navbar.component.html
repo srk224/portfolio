@@ -7,29 +7,8 @@
 </div>
 
 <!-- Languages -->
-<div class="welcomeBar" fxLayout fxLayoutGap="1.5rem" fxLayoutAlign="start center">
-    
-    <div *ngFor="let entry of welcomeBar" matTooltip={{entry.language}}>{{entry.displayText}}</div>
-
-    <!-- <div matTooltip="Latin">Welcome</div>
-    <div matTooltip="Spanish">bienvenidas</div>
-    <div matTooltip="Arabic">'ahlan bik</div>
-    <div matTooltip="Bulgarian">добре дошли</div>
-    <div matTooltip="Chinese">歡迎</div>
-    <div matTooltip="Croatian">Dobrodošli</div>
-    <div matTooltip="Filipino">Maligayang pagdating</div>
-    <div matTooltip="French">Bienvenue</div>
-    <div matTooltip="German">willkommen</div>
-    <div matTooltip="Hawaiian">Welina</div>
-    <div matTooltip="Japanese">ようこそ</div>
-    <div matTooltip="Korean">환영하다</div>
-    <div matTooltip="Norwegian">Velkommen</div>
-    <div matTooltip="Polish">Witamy</div>
-    <div matTooltip="Romanian">Bine ati venit</div>
-    <div matTooltip="Russian">Добро пожаловать</div>
-    <div matTooltip="Serbian">Добродошли</div>
-    <div matTooltip="Thai">ยินดีต้อนรับ</div>
-    <div matTooltip="Turkish">Hoşgeldiniz</div>
-    <div matTooltip="Ukranian">ласкаво просимо</div>
-    <div matTooltip="Vietnamese">hoan nghênh</div> -->
+<div class="welcomeBar">
+    <div class="innerWelcomeBar"  fxLayout fxLayoutAlign="space-around center">
+        <div *ngFor="let entry of welcomeBar" matTooltip={{entry.language}}>{{entry.displayText}}</div>
+    </div>
 </div>

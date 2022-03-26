@@ -13,11 +13,18 @@ a {
     color: #F5004A;
     white-space: nowrap;
     padding: 1rem 0;
-    // animation: welcomebarAnimation 20s linear 0s infinite;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.innerWelcomeBar {
+    width: 4000px;
+    animation: welcomebarAnimation 25s linear 0s infinite;
 }
 
 @keyframes welcomebarAnimation {
     100% { 
-        transform: translateX(-114%);  
+        transform: translateX(-2000px);
     }
 }
