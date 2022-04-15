@@ -5,17 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatChipsModule} from '@angular/material/chips';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     FlexLayoutModule,
     MatTooltipModule,
     BrowserAnimationsModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
