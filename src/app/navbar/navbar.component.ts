@@ -1,5 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { welcome } from './welcomebar.interface'
+import { fromEvent, Observable, Subscription } from "rxjs";
+
+
+export interface welcome {
+  displayText: string;
+  language: string;
+}
+
+export interface navStructure {
+  heading: string;
+  smHeading: string;
+  link: string;
+}
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +20,38 @@ import { welcome } from './welcomebar.interface'
 })
 
 export class NavbarComponent implements OnInit {
+  public smallNav: boolean = false;
+  resizeSubscription$: Subscription;
+  resizeObservable$: Observable<Event>;
+
+
+  public navBar: navStructure[] = [
+    {
+      heading: "Home",
+      smHeading: "Home",
+      link: "google.ca",
+    },
+    {
+      heading: "About me",
+      smHeading: "About",
+      link: "google.ca",
+    },
+    {
+      heading: "Experience",
+      smHeading: "Experience",
+      link: "google.ca",
+    },
+    {
+      heading: "Projects",
+      smHeading: "Projects",
+      link: "google.ca",
+    },
+    {
+      heading: "Contact me",
+      smHeading: "Contact",
+      link: "google.ca",
+    }
+  ]
 
   public welcomeBar: welcome[] = [
     {
@@ -180,9 +224,22 @@ export class NavbarComponent implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor() {
+    this.resizeObservable$ = fromEvent(window, 'resize')
+    this.resizeSubscription$ = this.resizeObservable$.subscribe( evt => {
+      if (window.innerWidth <= 566) {
+        this.smallNav = true;
+      } else {
+        this.smallNav = false;
+      }
+    });
+  }
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy() {
+    this.resizeSubscription$.unsubscribe()
   }
 
 }

@@ -1,9 +1,6 @@
-<div class="nav" fxLayout fxLayoutGap="3.8rem" fxLayoutAlign="center">
-    <a href="google">Home</a>
-    <a href="google">About me</a>
-    <a href="google">Experience</a>
-    <a href="google">Projects</a>
-    <a href="google">Contact me</a>
+<div class="nav" fxLayout fxLayoutGap="3.8rem" fxLayoutGap.lt-sm="2.5rem" fxLayoutAlign="center">
+    <a *ngFor="let header of navBar" href="{{header.link}}" fxHide="{{smallNav}}">{{header.heading}}</a>
+    <a *ngFor="let header of navBar" href="{{header.link}}" fxShow="{{smallNav}}">{{header.smHeading}}</a>
 </div>
 
 <!-- Languages -->
