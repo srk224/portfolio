@@ -46,6 +46,10 @@
   --z-modal: 1000;
 }
 
+.c{
+  align-items: center;
+  padding-left: 230px;
+}
 .typing {
   border-right: 0.1rem solid;
   width: 36ch;
