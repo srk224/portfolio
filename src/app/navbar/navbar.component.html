@@ -1,9 +1,24 @@
-<div class="nav" fxLayout fxLayoutGap="3.8rem" fxLayoutGap.lt-sm="2.5rem" fxLayoutAlign="center center">
-    <img class="logo ml-4" src="../../assets/abstract-logo.png">
-    <a *ngFor="let header of navBar" href="{{header.link}}" fxHide="{{smallNav}}">{{header.heading}}</a>
-    <a *ngFor="let header of navBar" href="{{header.link}}" fxShow="{{smallNav}}">{{header.smHeading}}</a>
+<div class="nav py-2" fxLayout fxLayoutGap="3.8rem" fxLayoutGap.lt-md="2.5rem" fxLayoutGap.lt-sm="1.5rem" fxLayoutAlign="center center">
+    <span class="logo no-highlight left-space">KC</span>
+    <a *ngFor="let header of navBar" href="{{header.link}}" fxHide.lt-md class="main no-underline">{{header.heading}}</a>
+    <!-- nav menu -->
+    <button mat-icon-button (click)="openNavMenu()" fxShow.lt-md fxHide.md fxHide.gt-md>
+        <mat-icon class="material-icons-outlined">menu</mat-icon>
+    </button>
+    <!-- Theme toggle -->
+    <button mat-icon-button id="theme-toggle" (click)="toggleTheme()" class="right-space">
+        <mat-icon *ngIf="isLightMode" class="material-icons-outlined">light_mode</mat-icon>
+        <mat-icon *ngIf="!isLightMode" class="material-icons-outlined">dark_mode</mat-icon>
+    </button>
 </div>
-
+<!-- Mav menu drop-down -->
+<div *ngIf="navMenu" fxHide.gt-md fxHide.md fxLayout="column" class="nav-menu w-100">
+    <a *ngFor="let header of navBar" href="{{header.link}}" (click)="closeNavMenu()">
+        <div fxLayout="column" fxLayoutAlign="center center" class="mav-menu-option w-100">
+            {{header.heading}}
+        </div>
+    </a>
+</div>
 <!-- Languages -->
 <div class="welcomeBar">
     <div class="innerWelcomeBar" fxLayout fxLayoutAlign="space-around center">

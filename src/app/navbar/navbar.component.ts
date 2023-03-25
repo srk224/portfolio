@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { fromEvent, Observable, Subscription } from "rxjs";
-
 
 export interface welcome {
   displayText: string;
@@ -21,9 +19,10 @@ export interface navStructure {
 
 export class NavbarComponent implements OnInit {
   public smallNav: boolean = false;
-  resizeSubscription$: Subscription;
-  resizeObservable$: Observable<Event>;
-
+  public isLightMode: boolean = true;
+  public currentTheme: string | null = 'light';
+  public targetTheme: string = 'dark';
+  public navMenu: boolean = false;
 
   public navBar: navStructure[] = [
     {
@@ -34,7 +33,7 @@ export class NavbarComponent implements OnInit {
     {
       heading: "About me",
       smHeading: "About",
-      link: "#about",
+      link: "#about-me",
     },
     {
       heading: "Experience",
@@ -49,7 +48,7 @@ export class NavbarComponent implements OnInit {
     {
       heading: "Contact me",
       smHeading: "Contact",
-      link: "#contact",
+      link: "#contact-me",
     }
   ]
 
@@ -224,24 +223,32 @@ export class NavbarComponent implements OnInit {
     },
   ]
 
-  constructor() {
-    this.resizeObservable$ = fromEvent(window, 'resize')
-    this.resizeSubscription$ = this.resizeObservable$.subscribe( evt => {
-      if (window.innerWidth <= 566) {
-        this.smallNav = true;
-      } else {
-        this.smallNav = false;
-      }
-    });
-  }
+  constructor() {}
 
   ngOnInit(): void {
+    var toggle = document.getElementById("theme-toggle");
+    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    if (storedTheme) {
+      document.documentElement.setAttribute('data-theme', storedTheme)
+    }
   }
 
-  
+  public toggleTheme() {
+    this.currentTheme = document.documentElement.getAttribute("data-theme");
 
-  ngOnDestroy() {
-    this.resizeSubscription$.unsubscribe()
+    this.targetTheme = this.currentTheme === "light" ? "dark" : 'light';
+    this.isLightMode = this.currentTheme === "light" ? true : false;
+
+    document.documentElement.setAttribute('data-theme', this.targetTheme)
+    localStorage.setItem('theme', this.targetTheme);
+  }
+
+  public openNavMenu() {
+    this.navMenu = !this.navMenu;
+  }
+
+  public closeNavMenu() {
+    this.navMenu = false;
   }
 
 }
