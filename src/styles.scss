@@ -21,7 +21,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body { 
+body, mat-expansion-panel div { 
     margin: 0; 
     font-family: 'Roboto Mono', "Helvetica Neue", sans-serif;
     font-size: 0.9rem;

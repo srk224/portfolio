@@ -2,12 +2,12 @@ h2 {
     font-size: 2rem;
 }
 
-.entry {
-    margin-bottom: 1rem;
-    // border-bottom: 2px solid black;
+mat-expansion-panel, .mat-accordion .mat-expansion-panel:first-of-type, .mat-accordion .mat-expansion-panel:last-of-type {
+    border-left: solid 2px black;
+    border-radius: 0rem;
 }
 
-.title {
+mat-expansion-panel-header .title {
     font-size: 1.2rem;
 }
 
@@ -26,4 +26,8 @@ mat-icon {
     .logo {
       max-width: 40%;
     }
+  }
+
+  img.logosmall {
+    height: 8rem;
   }

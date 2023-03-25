@@ -1,114 +1,30 @@
 <div class="container pt-5">
     <h2>2. Experience</h2>
 
-    <div class="entry" fxLayout="row" fxLayout.lt-sm="row wrap">
-        <div class="mb-4" fxFlex="60" fxFlex.lt-sm="100">
-            <div class="title accent-font">Front-end Developer</div>
-            <div class="mt-2">
-                Ontario Institute for Cancer Research | <mat-icon>location_on</mat-icon>Toronto, ON
+    <mat-accordion>
+        <div *ngFor="let entry of Experience" class="entry">
+            <div fxLayout fxFlex fxLayoutAlign="center center">
+                <img class="logosmall p-2" src="../../assets/work_logos/{{ entry.logo }}.png" matTooltip="Ontario Institute for Cancer Research - Dockstore">
             </div>
-            <div class="mt-1">Jan. 2022 - Apr. 2022
-                <mat-icon>date_range</mat-icon>
-            </div>
-
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Composed detailed test suites and worked closely</div>
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Investigated user reported bugs for weekly triaging with</div>
-                
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Performed data analysis for audit work reviewing a</div>
-            </div>
+            <mat-expansion-panel hideToggle class="mat-elevation-z mb-4" fxFlex="60">
+                <mat-expansion-panel-header [collapsedHeight]="'min-content'" [expandedHeight]="'min-content'" class="p-4">
+                    <div fxLayout="column">
+                        <div class="title accent-font">{{ entry.title }}</div>
+                        <div class="mt-2">
+                            {{ entry.company }} | <mat-icon>location_on</mat-icon>{{ entry.location}}
+                        </div>
+                        <div class="mt-1">{{ entry.date }}
+                            <mat-icon>date_range</mat-icon>
+                        </div>
+                    </div>
+                </mat-expansion-panel-header>
+                <div *ngFor="let point of entry.bulletPoints" fxLayout fxLayoutGap="0.5rem" class="mt-3">
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                    <div>{{ point }}</div>
+                </div>
+            </mat-expansion-panel>
         </div>
-        <div fxFlex fxFlex.lt-sm="100" fxLayout fxLayoutAlign="center center">
-            <img class="logo pt-2 pb-2" src="../../assets/work_logos/oicr_dockstore.svg" matTooltip="Ontario Institute for Cancer Research - Dockstore">
-        </div>
-    </div>
-
-    <div class="entry" fxLayout="row" fxLayout.lt-sm="row wrap">
-        <div fxFlex fxFlex.lt-sm="100" fxFlexOrder.lt-sm="2" fxLayout fxLayoutAlign="center center">
-            <img class="logo pt-2 pb-2" src="../../assets/work_logos/carta_logo.png" matTooltip="Carta Maple Technologies">
-        </div>
-        <div class="mb-4" fxFlex="60" fxFlex.lt-sm="100">
-            <div class="title accent-font">QA Analyst</div>
-            <div class="mt-2">
-                Carta Maple Technologies | <mat-icon>location_on</mat-icon>Kitchener/Waterloo, ON
-            </div>
-            <div class="mt-1">May 2022 - Aug. 2022
-                <mat-icon>date_range</mat-icon>
-            </div>
-    
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Composed test suites & performed end-to-end testing for 4 major feature releases - iOS, Android & web</div>
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Weekly bug report triaging, assisted with troubleshooting & root causes</div>
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Data analysis for audit work reviewing user NPS scores & support tickets</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="entry" fxLayout="row" fxLayout.lt-sm="row wrap">
-        <div class="mb-4" fxFlex="60" fxFlex.lt-sm="100">
-            <div class="title accent-font">QA Analyst & Customer Success Specialist</div>
-            <div class="mt-2">
-                Showfloor (Now Hellohire) | <mat-icon>location_on</mat-icon>Toronto, ON
-            </div>
-            <div class="mt-1">Sept. 2020 - Dec. 2020
-                <mat-icon>date_range</mat-icon>
-            </div>
-    
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>End-to-end & API testing to ensure stability before deploys</div>
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Detailed bug reports, worked with dev team to troubleshoot & resolve</div>
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Performed administrative duties including creating 100+ users, 30 virtualevent spaces</div>
-            </div>
-        </div>
-        <div fxFlex fxFlex.lt-sm="100" fxLayout fxLayoutAlign="center center">
-            <img class="logo pt-2 pb-2" src="../../assets/work_logos/hello_hire.png" matTooltip="Showfloor (Now Hellohire)">
-        </div>
-    </div>
-
-    <div class="entry" fxLayout="row" fxLayout.lt-sm="row wrap">
-        <div fxFlex fxFlex.lt-sm="100" fxFlexOrder.lt-sm="2" fxLayout fxLayoutAlign="center center">
-            <img class="logo pt-2 pb-2" src="../../assets/work_logos/metrolinx_logo_small.png"  matTooltip="Metrolinx">
-        </div>
-        <div class="mb-4" fxFlex="60" fxFlex.lt-sm="100">
-            <div class="title accent-font">Rail Fleet Maintenance Assistant</div>
-            <div class="mt-2">
-                Metrolinx | <mat-icon>location_on</mat-icon>Toronto, ON
-            </div>
-            <div class="mt-1">Jan. 2020 - Apr. 2020
-                <mat-icon>date_range</mat-icon>
-            </div>
-    
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Fuel efficiency calculations, data graphing for fleet resource consumption & project expense reports</div>
-            </div>
-            <div fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                <mat-icon>keyboard_arrow_right</mat-icon>
-                <div>Continuously update database with daily equipment failures, repairs & replacements</div>
-            </div>
-        </div>
-    </div>
+    </mat-accordion>
 
 </div>
 
