@@ -1,0 +1,21 @@
+div.container {
+    min-height: 80%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2 > mat-icon {
+    font-size: 2.2rem;
+    vertical-align: top;
+}
+
+img {
+    height: 2rem;
+    transition: transform .6s;
+}
+
+img:hover {
+    transform: translateY(-0.5rem);
+}
