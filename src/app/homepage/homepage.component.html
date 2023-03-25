@@ -1,31 +1,34 @@
 <div class="container home">
 
     <div fxLayout fxLayoutAlign="end">
-        <img class="cornerDesignR" src="../../assets/homepage-right-corner.svg">
+        <img class="cornerDesignR no-highlight invert-img" src="../../assets/homepage-right-corner.svg">
     </div>
     
     <div class="intro">Hi, my name is</div>
 
-    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.lt-sm="start center">
-        <h1>Kimberley Chong</h1>
+    <div fxLayout="column" fxLayoutAlign="center center">
+        <h1 [style]="fontFamily" (click)="fontChange()" class="pointer no-highlight">KIMBERLEY CHONG</h1>
+
         <div class="blurb">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            A BLANK, BLANK, and BLANK developer with a creative eye or something.
         </div>
         <div fxLayout fxLayoutAlign="space-around end" fxLayoutGap="1rem" class="mt-3">
-            <a href="https://github.com/KimberleyChong" target="_blank"><img src="../../assets/icons/github.svg" class="icons"></a>
-            <a href="https://github.com/KimberleyChong" target="_blank"><img src="../../assets/icons/email.svg" class="icons"></a>
-            <a href="https://github.com/KimberleyChong" target="_blank"><img src="../../assets/icons/linkedin.svg" class="icons"></a>
+            <a href="https://github.com/KimberleyChong" target="_blank"><img src="../../assets/icons/github.svg" class="icons invert-img accent-on-hover"></a>
+            <a href="https://github.com/KimberleyChong" target="_blank"><img src="../../assets/icons/email.svg" class="icons invert-img accent-on-hover"></a>
+            <a href="https://github.com/KimberleyChong" target="_blank"><img src="../../assets/icons/linkedin.svg" class="icons invert-img accent-on-hover"></a>
         </div>
     </div>
 
     <div fxLayout fxLayoutAlign="start">
-        <img class="cornerDesignL" src="../../assets/homepage-left-corner.svg">
+        <img class="cornerDesignL no-highlight invert-img" src="../../assets/homepage-left-corner.svg">
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="center center" class=" scroll mt-5">
-        <span>Scroll</span>
-        <img class="arrow mt-2" src="../../assets/icons/arrow-down.svg">
-    </div>
+    <a href="#about-me" class="main no-underline">
+    <div fxLayout="column" fxLayoutAlign="center center" class="scroll no-highlight mt-5">
+            <span>Scroll</span>
+            <mat-icon>expand_more</mat-icon>
+        </div>
+    </a>
 
 </div>
 

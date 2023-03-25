@@ -9,7 +9,10 @@ export class ContactMeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  public contactLink() {
+    window.location.href = "#contact-me";
   }
 
 }

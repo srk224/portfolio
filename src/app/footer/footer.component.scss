@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 .pb-3 {
-    border-top: 2px solid $main;
+    border-top: 2px solid var(--main);
 }
 
 mat-icon {

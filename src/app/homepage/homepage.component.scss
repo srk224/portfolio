@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .container {
     margin-top: 3%;
 }
@@ -25,22 +27,13 @@
     float: left;
 }
 
-// Icons
-.icons {
-    width: 80%;
-    transition: transform .6s;
-}
-
-.icons:hover {
-    transform: translateY(-0.3rem);
-}
-
 // Scroll animation and style
 .arrow {
     width: 19px;
 }
 
 .scroll {
+    cursor: pointer;
     animation: scrollAnimation 1s ease-in-out infinite;
 }
 
@@ -56,4 +49,4 @@
     100% {
       transform: translateY(-3px);
     }
-  }
+}
