@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Portfolio';
+  public title = 'Portfolio';
 
   ngOnInit(): void {
     window.onscroll = (event) => this.scrollProgress();

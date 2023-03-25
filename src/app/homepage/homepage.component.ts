@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 @Component({
   selector: 'app-homepage',
@@ -9,6 +11,10 @@ export class HomepageComponent implements OnInit {
   private index: number = 0;
   public fontFamily: string = '';
   private fontFamilyList: string[] = ['Bungee Shade', 'Bungee Hairline', 'Bungee Outline', 'Bungee'];
+  public faGithub = faGithub;
+  public faEnvelope = faEnvelope;
+  public faLinkedin = faLinkedin;
+
   constructor() { }
 
   ngOnInit(): void {

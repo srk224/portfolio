@@ -37,8 +37,8 @@ html[data-theme='dark'] {
     color: $accent;
 }
 
-.accent-on-hover:hover {
-    filter: invert(18%) sepia(89%) saturate(5768%) hue-rotate(334deg) brightness(91%) contrast(112%);
+.accent-hover:hover {
+    color: $accent;
 }
 
 .filter-on-hover:hover {
@@ -109,10 +109,6 @@ h3, .accent-font {
 
 .weight-500 {
     font-weight: 500;
-}
-
-.icons {
-    width: 80%;
 }
 
 .chip {
@@ -189,4 +185,9 @@ mat-stroked-button:hover {
 
 .mat-dialog-container {
     background-color: var(--background-color);
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: var(--main); 
 }

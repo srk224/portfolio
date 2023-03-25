@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { ImageDialogComponent } from '../image-dialog/image-dialog.component';
 import { imgInfo, project, ProjectsService } from './projects.service'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -9,6 +10,7 @@ import { imgInfo, project, ProjectsService } from './projects.service'
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  public faGithub = faGithub;
   public projects: project[];
 
   constructor(

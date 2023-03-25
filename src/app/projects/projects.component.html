@@ -20,9 +20,11 @@
                         {{ project.blurb }}
                     </div>
                     
-                    <a href="{{ project.github }}" target="_blank">
-                        <img class="git no-highlight invert-img mt-3" src="../../assets/icons/github.svg"> 
-                    </a>
+                    <div class="mt-2">
+                        <a href="{{ project.github }}" target="_blank">
+                            <fa-icon [icon]="faGithub" size="lg"></fa-icon>
+                        </a>
+                    </div>
                 </div>
                 <div class="visuals" fxFlex="50" fxFlex.lt-md="100" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.5rem">
                     <video *ngIf="project.class === 'saver' || project.class === 'spotify'; else noVideo" preload loop autoplay muted id="video" webkit-playsinline="" playsinline="" (click)="openDialog(project.class, 0, true)">
