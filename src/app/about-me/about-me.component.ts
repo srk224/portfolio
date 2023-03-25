@@ -12,32 +12,33 @@ interface skillHighlight {
 })
 export class AboutMeComponent implements OnInit {
 
-public skillHighlights: skillHighlight[] = [
-  {
-    displayText: "3 years experience",
-    imgSrc: "clock",
-  },
-  {
-    displayText: "3 years experience",
-    imgSrc: "clock",
-  },
-  {
-    displayText: "3 years experience",
-    imgSrc: "clock",
-  },
-  {
-    displayText: "3 years experience",
-    imgSrc: "clock",
-  }
-];
-
-  public Languages: string[] = [
-    "hello", "there", 
+  public skillHighlights: skillHighlight[] = [
+    {
+      displayText: "3 years experience",
+      imgSrc: "clock",
+    },
+    {
+      displayText: "3 years experience",
+      imgSrc: "clock",
+    },
+    {
+      displayText: "3 years experience",
+      imgSrc: "clock",
+    },
+    {
+      displayText: "3 years experience",
+      imgSrc: "clock",
+    }
+  ];
+  public languages: string[] = [
+    'HTML', 'CSS/SCSS', 'Javascript/Typescript', 'C/C++', 'Java'
   ]
+  public frameworks: string[] = [
+    "Angular", 
+  ]
+
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.Languages);
-  }
+  ngOnInit(): void {}
 
 }

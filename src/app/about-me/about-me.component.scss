@@ -1,19 +1,23 @@
+@import '../../styles.scss';
+
 h2 {
     font-size: 2rem;
 }
 
+.blurb {
+    border-left: 0.18rem solid black;
+}
+
+.icons {
+    margin-top: 3rem;
+}
 
 .skillsImg {
-    height: 11vw;
+    width: 40%;
     transition: transform .6s;
 
 }
 
 .skillsImg:hover {
-    transform: translateY(-0.5rem);
-    
-}
-
-.chip {
-    margin: 0.25rem;
+    transform: translateY(-0.5rem); 
 }
