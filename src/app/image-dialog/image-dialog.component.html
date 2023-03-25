@@ -1,4 +1,22 @@
-<mat-dialog-content class="m-0 p-0" fxLayout="column">
-    <img src="{{ imgPath }}" fxFlex>
-    <div class="pt-3">{{ imgText }}</div>
+<mat-dialog-content class="m-0 p-0" >
+    <div *ngIf="isVideo === true; else displayPhoto">
+        <video preload loop autoplay muted id="video" webkit-playsinline="" playsinline="">
+            <source src="{{ video }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <ng-template #displayPhoto>
+    <div fxLayout="column" fxLayoutAlign="center center" class="content-wrapper">
+        <img src="{{ images[index].img }}" fxFlex>
+        <div>
+            <button mat-flat-button mat-icon-button (click)="back()" matTooltip="Previous" matTooltipPosition="left">
+                <mat-icon>chevron_left</mat-icon>
+            </button>
+            <button mat-flat-button mat-icon-button (click)="next()" matTooltip="Next" matTooltipPosition="right">
+                <mat-icon>chevron_right</mat-icon>
+            </button>
+        </div>
+        <div>{{ images[index].imgText }}</div>
+    </div>
+    </ng-template>
 </mat-dialog-content>

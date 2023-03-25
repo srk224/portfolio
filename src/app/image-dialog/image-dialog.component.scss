@@ -6,12 +6,18 @@
     overflow: visible;
 }
 
-img {
+img, video {
     border-radius: 0.5rem;
-    width: 60vw;
-    height: auto;
 }
 
-div {
-    width: 60vw;
+img, video, .content-wrapper {
+    width: 55vw;
+}
+
+mat-icon-button, .mat-flat-button {
+    background: transparent;
+}
+
+.content-wrapper, mat-icon {
+    color: var(--main);
 }

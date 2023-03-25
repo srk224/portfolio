@@ -9,7 +9,12 @@ h2 {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.blurb {
+    border-left: 0.18rem solid;
 }
 
 .logo {
@@ -20,11 +25,70 @@ h2 {
 .saver {
     color: #E23557;
     border-color: #E23557;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .spotify {
     color: #1DB954;
     border-color: #1DB954;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.portfolio {
+    color: $secondary;
+    border-color: $secondary;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.saver-blk {
+    color: var(--main);
+    border-color: #E23557;
+}
+.spotify-blk {
+    color: var(--main);
+    border-color: #1DB954;
+}
+
+.saver-blk:hover, .spotify-blk:hover, .portfolio-blk:hover  {
+    filter: saturate(3);
+}
+
+.portfolio-blk {
+    color: var(--main);
+    border-color: $secondary;
+}
+
+.chip.saver:hover {
+    color: var(--background-color);
+    background-color: #E23557;    
+    cursor: pointer;
+}
+
+.chip.spotify:hover {
+    color: var(--background-color);
+    background-color: #1DB954;
+    cursor: pointer;
+}
+
+.chip.portfolio:hover {
+    color: var(--background-color);
+    background-color: $secondary;
+    cursor: pointer;
 }
 
 .git {
@@ -35,23 +99,29 @@ h2 {
     transform: translateY(-0.3rem);
 }
 
-.project-img {
+video, .no-video {
     border-radius: 0.4rem;
-    height: min-content;
 }
 
-.project-img:hover {
+video, .no-video, .img-holder {
+    width: 80%;
+}
+
+.no-video {
+    border: 0.08rem solid var(--main);
+}
+
+.project-img {
+    border-radius: 0.4rem;
+}
+
+.project-img:hover, video:hover {
     cursor: pointer;
     filter: brightness(60%);
     -webkit-filter: brightness(60%);
-    transition: all 0.2s ease;
-}
-
-video {
-    width: 50vw;
-    border-radius: 0.6rem;
-}
-
-iframe:hover {
-
+    -webkit-transition: 0.1s ease;
+    -moz-transition: 0.1s ease;
+    -o-transition: 0.1s ease;
+    -ms-transition: 0.1s ease;
+    transition: 0.1s ease;
 }
