@@ -1,0 +1,19 @@
+@import '../styles.scss';
+
+/* The progress container (grey background) */
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    background: $accent;
+    width: 0%;
+}
+
+.progress-container .progress-bar {
+    height: 0.3rem;
+}
