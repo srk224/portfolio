@@ -4,20 +4,29 @@ h2 {
     font-size: 2rem;
 }
 
+.holder {
+    margin-top: 3.5rem;
+}
+
 .blurb {
-    border-left: 0.18rem solid black;
+    border-left: 0.18rem solid var(--main);
+}
+
+.blurb:hover {
+    border-color: $accent;
 }
 
 .icons {
     margin-top: 3rem;
 }
 
-.skillsImg {
+.skills-img {
     width: 40%;
-    transition: transform .6s;
-
+    max-width: 4.5rem;
+    transition: transform .2s;
 }
 
-.skillsImg:hover {
-    transform: translateY(-0.5rem); 
+.skills-img:hover {
+    transform: translateY(-0.25rem); 
 }
+

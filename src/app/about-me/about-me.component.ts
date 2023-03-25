@@ -41,4 +41,8 @@ export class AboutMeComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  public aboutMeLink() {
+    window.location.href = "#about-me";
+  }
+
 }
