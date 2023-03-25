@@ -1,31 +1,40 @@
 <div class="container pt-5">
-    <h2>2. Experience</h2>
+    <h2 class="section-header">2. Experience</h2>
 
-    <mat-accordion>
-        <div *ngFor="let entry of Experience" class="entry">
-            <div fxLayout fxFlex fxLayoutAlign="center center">
-                <img class="logosmall p-2" src="../../assets/work_logos/{{ entry.logo }}.png" matTooltip="Ontario Institute for Cancer Research - Dockstore">
-            </div>
-            <mat-expansion-panel hideToggle class="mat-elevation-z mb-4" fxFlex="60">
-                <mat-expansion-panel-header [collapsedHeight]="'min-content'" [expandedHeight]="'min-content'" class="p-4">
-                    <div fxLayout="column">
-                        <div class="title accent-font">{{ entry.title }}</div>
-                        <div class="mt-2">
-                            {{ entry.company }} | <mat-icon>location_on</mat-icon>{{ entry.location}}
+    <div class="container-content mt-5">
+        <div class="box">
+            <mat-accordion>
+                <div *ngFor="let entry of Experience" class="entry">
+                    <mat-expansion-panel hideToggle class="mat-elevation-z" fxFlex fxFlex.lt-md="100">
+                        <mat-expansion-panel-header [collapsedHeight]="'min-content'" [expandedHeight]="'min-content'" class="p-0" >
+                            <div fxLayout fxLayout.lt-md="column">
+                                <div fxLayout fxFlex="30" fxFlex.lt-md="100" fxLayoutAlign="center center">
+                                    <img class="logosmall p-2" src="../../assets/work_logos/{{ entry.logo }}.png" matTooltip="{{ entry.toolTip }}">
+                                </div>
+                                <div fxLayout="column" fxFlex="70" fxFlex.lt-md="100" class="p-4">
+                                    <div class="title">{{ entry.title }}</div>
+                                    <div class="mt-2">
+                                        {{ entry.company }} | <mat-icon>location_on</mat-icon>{{ entry.location}}
+                                    </div>
+                                    <div class="mt-1">{{ entry.date }}
+                                        <mat-icon>date_range</mat-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-expansion-panel-header>
+                        <div fxLayout fxLayoutAlign="center center" class="w-100">
+                            <!-- <mat-icon>more_horiz</mat-icon> -->
+                            <mat-icon>remove</mat-icon>
                         </div>
-                        <div class="mt-1">{{ entry.date }}
-                            <mat-icon>date_range</mat-icon>
+                        <div *ngFor="let point of entry.bulletPoints" fxLayout fxLayoutGap="0.5rem" class="mt-3">
+                            <mat-icon>keyboard_arrow_right</mat-icon>
+                            <div>{{ point }}</div>
                         </div>
-                    </div>
-                </mat-expansion-panel-header>
-                <div *ngFor="let point of entry.bulletPoints" fxLayout fxLayoutGap="0.5rem" class="mt-3">
-                    <mat-icon>keyboard_arrow_right</mat-icon>
-                    <div>{{ point }}</div>
+                    </mat-expansion-panel>
                 </div>
-            </mat-expansion-panel>
+            </mat-accordion>
         </div>
-    </mat-accordion>
-
+    </div>
 </div>
 
 

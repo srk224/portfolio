@@ -8,6 +8,7 @@ export interface experienceData {
   location: String;
   date: String;
   bulletPoints: String[];
+  toolTip: String;
 }
 
 @Component({
@@ -31,6 +32,7 @@ export class ExperienceComponent implements OnInit {
         "Investigated user reported bugs for weekly triaging with",
         "Performed data analysis for audit work reviewing a",
       ],
+      toolTip: "Ontario Institute for Cancer Research - Dockstore",
     },
     {
       logo: "carta",
@@ -43,6 +45,7 @@ export class ExperienceComponent implements OnInit {
         "Weekly bug report triaging, assisted with troubleshooting & root causes",
         "Data analysis for audit work reviewing user NPS scores & support tickets",
       ],
+      toolTip: "Carta Maple Technologies",
     },
     {
       logo: "hellohire",
@@ -55,6 +58,7 @@ export class ExperienceComponent implements OnInit {
         "Detailed bug reports, worked with dev team to troubleshoot & resolve",
         "Performed administrative duties including creating 100+ users, 30 virtualevent spaces",
       ],
+      toolTip: "Hellohire (Formerly Showfloor)",
     },
     {
       logo: "metrolinx",
@@ -66,6 +70,7 @@ export class ExperienceComponent implements OnInit {
         "Fuel efficiency calculations, data graphing for fleet resource consumption & project expense reports",
         "Continuously update database with daily equipment failures, repairs & replacements",
       ],
+      toolTip: "Metrolinx",
     }
   ]
 
