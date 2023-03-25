@@ -1,7 +1,5 @@
 .container {
     margin-top: 3%;
-    min-height: 65vh;
-    max-height: 60vh;
 }
 
 // Main text
@@ -30,6 +28,11 @@
 // Icons
 .icons {
     width: 80%;
+    transition: transform .6s;
+}
+
+.icons:hover {
+    transform: translateY(-0.3rem);
 }
 
 // Scroll animation and style

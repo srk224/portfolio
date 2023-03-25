@@ -29,27 +29,27 @@ export class NavbarComponent implements OnInit {
     {
       heading: "Home",
       smHeading: "Home",
-      link: "google.ca",
+      link: "#home",
     },
     {
       heading: "About me",
       smHeading: "About",
-      link: "google.ca",
+      link: "#about",
     },
     {
       heading: "Experience",
       smHeading: "Experience",
-      link: "google.ca",
+      link: "#experience",
     },
     {
       heading: "Projects",
       smHeading: "Projects",
-      link: "google.ca",
+      link: "#projects",
     },
     {
       heading: "Contact me",
       smHeading: "Contact",
-      link: "google.ca",
+      link: "#contact",
     }
   ]
 

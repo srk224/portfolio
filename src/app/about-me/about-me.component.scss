@@ -1,9 +1,17 @@
-.container {
-    margin-top: 8rem;
+h2 {
+    font-size: 2rem;
 }
+
 
 .skillsImg {
     height: 11vw;
+    transition: transform .6s;
+
+}
+
+.skillsImg:hover {
+    transform: translateY(-0.5rem);
+    
 }
 
 .chip {

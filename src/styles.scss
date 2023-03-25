@@ -10,11 +10,21 @@
 
 }
 
-html, body { height: 100%; }
+$accent: #F5004A;
+
+.accent {
+    color: $accent;
+}
+
+html, body { 
+    height: 100%; 
+    scroll-behavior: smooth;
+}
+
 body { 
     margin: 0; 
-    font-family: 'Lucida Console', "Helvetica Neue", sans-serif;
-    font-size: 0.8rem;
+    font-family: 'Roboto Mono', "Helvetica Neue", sans-serif;
+    font-size: 0.9rem;
 }
 
 h1 {
@@ -24,9 +34,29 @@ h1 {
     margin: 1.2rem;
 }
 
-.container {
-    margin: 0% 15%;
-    // background-color: rgb(208, 208, 255);
+h2, .accent-font {
+    font-family: 'ts_blockbold';
+}
+
+.chip {
+    border: black solid 0.1rem;
+    border-radius: 0.9rem;
+    padding: 0.25rem 0.7rem;
+    transition: transform .6s;
+}
+
+.chip:hover {
+    transform: translateY(-0.5rem);
+    
+}
+
+// .container {
+//     min-height: 90%;
+// }
+
+.container:not(.home) {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -35,3 +65,12 @@ h1 {
       margin: 0;
     }
   }
+
+button.mat-stroked-button, .mat-stroked-button:not(.mat-button-disabled) {
+    max-width: min-content;
+    border: 2px solid black;
+}
+
+mat-stroked-button:hover {
+    background: $accent;
+}
