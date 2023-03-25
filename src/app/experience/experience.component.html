@@ -7,7 +7,7 @@
                 <div *ngFor="let entry of Experience" class="entry">
                     <mat-expansion-panel hideToggle class="mat-elevation-z" fxFlex fxFlex.lt-md="100">
                         <mat-expansion-panel-header [collapsedHeight]="'min-content'" [expandedHeight]="'min-content'" class="p-0" >
-                            <div fxLayout fxLayout.lt-md="column">
+                            <div fxLayout fxLayout.lt-md="column" class="w-100">
                                 <div fxLayout fxFlex.gt-md="30" fxFlex.md="30" fxFlex.lt-md="100" fxLayoutAlign="center center">
                                     <img class="logosmall no-highlight" ngClass.lt-md="pt-4" [class.invert-img]="entry.logo === 'metrolinx'" src="../../assets/work_logos/{{ entry.logo }}.png" matTooltip="{{ entry.toolTip }}">
                                 </div>
