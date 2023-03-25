@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     z-index: 1;
-    background: #ccc;
+    background: var(--progress-container);
 }
 
 /* The progress bar (scroll indicator) */

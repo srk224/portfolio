@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 export interface experienceData {
   logo: String;
   title: String;
@@ -35,11 +34,25 @@ export class ExperienceComponent implements OnInit {
       toolTip: "Ontario Institute for Cancer Research - Dockstore",
     },
     {
+      logo: "dockstore",
+      title: "Front-end Developer",
+      company: "Ontario Institute for Cancer Research",
+      location: "Toronto, ON",
+      date: "Jan. 2022 - Apr. 2022",
+      bulletPoints: [
+        "Assisted in complete platform UI redesign",
+        "Updated and created new components to reflect new design",
+        "Introduced global changes",
+        "## PRs and closed ## tickets",
+      ],
+      toolTip: "Ontario Institute for Cancer Research - Dockstore",
+    },
+    {
       logo: "carta",
       title: "QA Analyst",
       company: "Carta Maple Technologies",
       location: "Kitchener/Waterloo, ON",
-      date: "May 2022 - Aug. 2022",
+      date: "May 2021 - Aug. 2021",
       bulletPoints: [
         "Composed test suites & performed end-to-end testing for 4 major feature releases - iOS, Android & web",
         "Weekly bug report triaging, assisted with troubleshooting & root causes",
@@ -76,7 +89,10 @@ export class ExperienceComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  public experienceLink() {
+    window.location.href = "#experience";
   }
 
 }

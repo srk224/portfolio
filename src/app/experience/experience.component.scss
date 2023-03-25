@@ -5,13 +5,12 @@ h2 {
 }
 
 .mat-expansion-panel .title {
+    font-size: 1rem;
     font-weight: 500;
 }
 
 mat-expansion-panel {
-    color: $main;
-    background-color: $background-colour;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--main);
 }
 
 .mat-expansion-panel, .mat-accordion .mat-expansion-panel:first-of-type, .mat-accordion .mat-expansion-panel:last-of-type {
@@ -22,15 +21,32 @@ mat-expansion-panel {
     margin: 0rem;
 }
 
-mat-expansion-panel-header .title {
-    font-size: 1.2rem;
+.mat-expansion-panel-header .company mat-icon {
+    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
 }
 
-mat-icon {
-    font-size: 1.1rem;
-    vertical-align: top;
+mat-expansion-panel-header .date, mat-expansion-panel-header .date mat-icon {
+    font-size: 0.7rem;
 }
 
-  img.logosmall {
-    width: 50%;
-  }
+mat-expansion-panel-header .date mat-icon {
+    height: 0.7rem;
+    width: 0.7rem;
+}
+
+mat-expansion-panel:hover .date-icon  {
+    filter: saturate(3);
+}
+
+img.logosmall {
+    height: 70%;
+    max-width: 40%;
+    object-fit: scale-down;
+    // width: 50%;
+}
+
+.vertical-padding {
+    padding-top: 3rem;
+}

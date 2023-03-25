@@ -1,24 +1,24 @@
-<div class="container pt-5">
-    <h2 class="section-header">2. Experience</h2>
+<div class="container">
+    <h2 class="section-header">2. Experience<mat-icon (click)="experienceLink()" class="section-link pointer ml-3">link</mat-icon></h2>
 
-    <div class="container-content mt-5">
-        <div class="box">
+    <div fxLayoutAlign="center center" class="w-100 mt-5">
+        <div fxFlex.gt-md="70" fxFlex.md="85" fxFlex.lt-md="90">
             <mat-accordion>
                 <div *ngFor="let entry of Experience" class="entry">
                     <mat-expansion-panel hideToggle class="mat-elevation-z" fxFlex fxFlex.lt-md="100">
                         <mat-expansion-panel-header [collapsedHeight]="'min-content'" [expandedHeight]="'min-content'" class="p-0" >
                             <div fxLayout fxLayout.lt-md="column">
-                                <div fxLayout fxFlex="30" fxFlex.lt-md="100" fxLayoutAlign="center center">
-                                    <img class="logosmall p-2" src="../../assets/work_logos/{{ entry.logo }}.png" matTooltip="{{ entry.toolTip }}">
+                                <div fxLayout fxFlex.gt-md="30" fxFlex.md="30" fxFlex.lt-md="100" fxLayoutAlign="center center">
+                                    <img class="logosmall no-highlight" ngClass.lt-md="pt-4" [class.invert-img]="entry.logo === 'metrolinx'" src="../../assets/work_logos/{{ entry.logo }}.png" matTooltip="{{ entry.toolTip }}">
                                 </div>
                                 <div fxLayout="column" fxFlex="70" fxFlex.lt-md="100" class="p-4">
                                     <div class="title">{{ entry.title }}</div>
-                                    <div class="mt-2">
-                                        {{ entry.company }} | <mat-icon>location_on</mat-icon>{{ entry.location}}
+                                    <div fxLayout="row wrap" class="company mt-2">
+                                        <span>{{ entry.company }}</span>
+                                        <span fxHide.lt-sm class="ml-2">|</span>
+                                        <span fxHide.lt-sm><mat-icon>location_on</mat-icon> {{ entry.location}}</span>
                                     </div>
-                                    <div class="mt-1">{{ entry.date }}
-                                        <mat-icon>date_range</mat-icon>
-                                    </div>
+                                    <div class="date">{{ entry.date }} <mat-icon class="accent date-icon">date_range</mat-icon></div>
                                 </div>
                             </div>
                         </mat-expansion-panel-header>
