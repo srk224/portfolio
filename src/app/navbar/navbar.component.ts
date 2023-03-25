@@ -238,6 +238,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
   ngOnDestroy() {
     this.resizeSubscription$.unsubscribe()
   }

@@ -1,11 +1,12 @@
-<div class="nav" fxLayout fxLayoutGap="3.8rem" fxLayoutGap.lt-sm="2.5rem" fxLayoutAlign="center">
+<div class="nav" fxLayout fxLayoutGap="3.8rem" fxLayoutGap.lt-sm="2.5rem" fxLayoutAlign="center center">
+    <img class="logo ml-4" src="../../assets/abstract-logo.png">
     <a *ngFor="let header of navBar" href="{{header.link}}" fxHide="{{smallNav}}">{{header.heading}}</a>
     <a *ngFor="let header of navBar" href="{{header.link}}" fxShow="{{smallNav}}">{{header.smHeading}}</a>
 </div>
 
 <!-- Languages -->
 <div class="welcomeBar">
-    <div class="innerWelcomeBar"  fxLayout fxLayoutAlign="space-around center">
+    <div class="innerWelcomeBar" fxLayout fxLayoutAlign="space-around center">
         <div *ngFor="let entry of welcomeBar" matTooltip={{entry.language}}>{{entry.displayText}}</div>
     </div>
 </div>

@@ -1,16 +1,29 @@
+@import '../../styles.scss';
+
+.logo {
+    height: 1.5rem;
+    left: 0;
+    position: absolute;
+}
+
 .nav {
-    padding: 1rem 0 0.9rem 0;
-    border-bottom: 2px solid #000000;
+    position: relative;
+    padding: 0.7rem 0 0.9rem 0;
+    border-bottom: 2px solid black;
+    div {
+        margin: auto;
+        width: fit-content;
+    }
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: $main;
 }
 
 .welcomeBar {
     font-size: 0.8rem;
-    color: #F5004A;
+    color: $accent;
     white-space: nowrap;
     padding: 1rem 0;
     width: 100vw;
