@@ -9,7 +9,8 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -19,6 +20,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImageDialogComponent } from './image-dialog/image-dialog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactMeComponent,
     ProjectsComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    ImageDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,9 +43,12 @@ import { FooterComponent } from './footer/footer.component';
     MatChipsModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule,
+    MatSlideToggleModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ImageDialogComponent],
 })
 export class AppModule { }

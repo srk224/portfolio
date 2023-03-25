@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.mat-dialog-content.m-0.p-0 {
+    max-height: fit-content;
+    max-width: fit-content;
+    overflow: visible;
+}
+
+img {
+    border-radius: 0.5rem;
+    width: 60vw;
+    height: auto;
+}
+
+div {
+    width: 60vw;
+}
