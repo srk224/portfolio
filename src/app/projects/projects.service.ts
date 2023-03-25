@@ -19,9 +19,9 @@ export interface imgInfo {
   providedIn: 'root',
 })
 export class ProjectsService {
-  public screensaverChips = ["HTML", "CSS", "Javascript", "Swift", "WKWebKit", "MacOS Compatible"];
+  public screensaverChips = ["HTML", "CSS", "Javascript", "Swift", "WKWebKit"];
   public spotifyChips = ["HTML", "CSS", "Javascript", "OAuth", "Spotify Web API"];
-  public portfolioChips = ["Typescript", "HTML", "SCSS", "Angular Application"]
+  public portfolioChips = ["Typescript", "HTML", "SCSS"]
   public saverImgInfo: imgInfo[] = [
     {
       img: "../../assets/screensaver/spreadsheet.png",

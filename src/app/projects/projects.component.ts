@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { ImageDialogComponent } from '../image-dialog/image-dialog.component';
-import { imgInfo, project, ProjectsService } from './projects.service'
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { project, ProjectsService } from './projects.service'
+import { faGithub, faFigma, faSpotify, faAngular, faApple } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -11,6 +11,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 })
 export class ProjectsComponent implements OnInit {
   public faGithub = faGithub;
+  public faFigma = faFigma;
+  public faSpotify = faSpotify;
+  public faAngular = faAngular;
+  public faApple = faApple;
+
   public projects: project[];
 
   constructor(
@@ -20,9 +25,7 @@ export class ProjectsComponent implements OnInit {
     this.projects = this.projectsService.projects;
   }
 
-  ngOnInit(): void {
-    // (document.getElementById('video') as HTMLVideoElement)?.play();
-  }
+  ngOnInit(): void {}
 
   openDialog(project: string, index: number, isVideo: boolean) {
     const dialogConfig = new MatDialogConfig();

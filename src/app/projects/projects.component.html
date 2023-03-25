@@ -7,13 +7,17 @@
                 <div fxFlex="50" fxFlex.lt-md="100">
                     <div fxLayout fxLayoutAlign="start center" fxLayoutGap="0.5rem" class="mb-2 mt-3">
                         <mat-icon *ngIf="project.class === 'saver'" class="saver no-highlight">laptop_mac</mat-icon>
-                        <img  *ngIf="project.class === 'spotify'" class="logo no-highlight" src="../../assets/spotify/spotify_logo.svg">
+                        <fa-icon *ngIf="project.class === 'spotify'" [icon]="faSpotify" size="2x" class="no-highlight spotify"></fa-icon>
                         <mat-icon *ngIf="project.class === 'portfolio'" class="logo portfolio no-highlight">auto_awesome</mat-icon>
                         <div class="title {{project.class}}">{{ project.title }}</div>
                     </div>
             
                     <div fxLayout="row wrap" fxLayoutGap="0.4rem" class="no-highlight">
-                        <div class="chip {{project.class}} no-highlight mt-2" *ngFor="let chip of project.chips">{{ chip }}</div>
+                        <div class="chip {{project.class}} no-highlight mt-2" *ngFor="let chip of project.chips" matTooltip="{{ chip }}">{{ chip }}</div>
+                        <div *ngIf="project.class === 'portfolio'" class="chip {{project.class}} no-highlight mt-2" matTooltip="Angular Application"><fa-icon [icon]="faAngular" size="1x"></fa-icon> Angular Application</div>
+                        <div *ngIf="project.class === 'saver'" class="chip {{project.class}} no-highlight mt-2" matTooltip="MacOS Compatible"><fa-icon [icon]="faApple" size="1x"></fa-icon> MacOS Compatible</div>
+                        <div class="chip {{project.class}} no-highlight mt-2"><fa-icon [icon]="faFigma" size="1x" matTooltip="Figma"></fa-icon></div>
+                        <div *ngIf="project.class === 'spotify'" class="chip {{project.class}} no-highlight mt-2" matTooltip="Spotify"><fa-icon [icon]="faSpotify" size="1x"></fa-icon></div>
                     </div>
             
                     <div class="blurb {{project.class}}-blk pl-3 mt-2">
