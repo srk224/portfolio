@@ -1,0 +1,29 @@
+h2 {
+    font-size: 2rem;
+}
+
+.entry {
+    margin-bottom: 1rem;
+    // border-bottom: 2px solid black;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+mat-icon {
+    font-size: 1.1rem;
+    vertical-align: top;
+}
+
+.logo {
+    max-width: 60%;
+    max-height: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* xs */
+    .logo {
+      max-width: 40%;
+    }
+  }
