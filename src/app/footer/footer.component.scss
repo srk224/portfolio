@@ -1,9 +1,11 @@
-@import '../../styles.scss';
+@import '../../theme.scss';
 
 .pb-3 {
     border-top: 2px solid var(--main);
 }
 
 mat-icon {
-    vertical-align: bottom;
+    font-size: 1.1rem;
+    width: 1.1rem;
+    height: 1.1rem;
 }

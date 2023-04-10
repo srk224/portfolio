@@ -1,0 +1,20 @@
+$accent: #F5004A;
+$highlight: #2941B4;
+
+html[data-theme='light'] {
+    --main: #171717;
+    --secondary: #2941B4;
+    --background-color: #fff;
+    --progress-container: #ccc;
+}
+
+html[data-theme='dark'] {
+    --main: #E3E2E1;
+    --secondary: #143AFF;
+    --background-color: #121212;
+    --progress-container: #242424;
+    .invert-img {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+    }
+}

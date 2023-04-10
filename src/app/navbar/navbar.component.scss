@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import '../../theme.scss';
 
 .logo {
   font-size: 1.5rem;
@@ -20,13 +20,25 @@
 
 .nav {
   height: 3rem;
-  border-bottom: 2px solid var(--main);
-  background-color: var(--background-color);
-
   top: 0.3rem;
+  border-bottom: 2px solid var(--main);
+  gap: 3.8rem;
+}
+
+.nav, .nav-menu {
   z-index: 99;
   position: sticky;
   position: -webkit-sticky;
+  border-bottom: 2px solid var(--main);
+  background-color: var(--background-color);
+}
+
+.nav-menu {
+  top: 3.3rem
+}
+
+.nav-menu-option {
+  height: 3rem;
 }
 
 a {
@@ -41,18 +53,6 @@ a {
 
 a:hover {
   color: $accent;
-}
-
-.nav-menu {
-  border-bottom: 2px solid var(--main);
-}
-
-.mav-menu-option {
-  height: 3rem;
-
-  :not(:last-of-type) {
-    border-bottom: 2px solid var(--main);
-  }
 }
 
 .welcomeBar {

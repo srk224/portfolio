@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import '../../theme.scss';
 
 h2 {
     font-size: 2rem;
@@ -10,7 +10,7 @@ h2 {
 
 .title {
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .blurb {
@@ -45,8 +45,8 @@ h2 {
 }
 
 .portfolio {
-    color: $secondary;
-    border-color: $secondary;
+    color: var(--secondary);
+    border-color: var(--secondary);
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.1s ease-in-out;
     -moz-transition: 0.1s ease-in-out;
@@ -64,13 +64,9 @@ h2 {
     border-color: #1DB954;
 }
 
-.saver-blk:hover, .spotify-blk:hover, .portfolio-blk:hover  {
-    filter: saturate(3);
-}
-
 .portfolio-blk {
     color: var(--main);
-    border-color: $secondary;
+    border-color: var(--secondary);
 }
 
 .chip.saver:hover {
@@ -87,7 +83,7 @@ h2 {
 
 .chip.portfolio:hover {
     color: var(--background-color);
-    background-color: $secondary;
+    background-color: var(--secondary);
     cursor: pointer;
 }
 
