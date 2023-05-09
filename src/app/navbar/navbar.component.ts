@@ -226,7 +226,10 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    // Consider puttig this line back in to match browser preferences, thinking I prefer to ignore and default to light
+    // var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+    var storedTheme = localStorage.getItem('theme');
     if (storedTheme) {
       // Set theme from stored or preferences
       document.documentElement.setAttribute('data-theme', storedTheme);
