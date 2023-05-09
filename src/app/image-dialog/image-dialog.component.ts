@@ -52,7 +52,7 @@ export class ImageDialogComponent implements OnInit {
       this.images = this.projectsService.spotifyImgInfo;
     } else {
       this.video = this.projectsService.projects[2].video;
-      this.images = this.projectsService.spotifyImgInfo;
+      this.images = this.projectsService.portfilioImgInfo;
     }
   }
 

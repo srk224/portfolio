@@ -8,34 +8,53 @@
                 <div fxLayout="row" fxLayout.lt-md="row wrap" fxLayoutAlign="space-around center" class="w-100">
 
                     <div fxLayout="column" fxLayoutAlign="center center" fxFlex fxFlex.lt-md="50">
-                        <img src="../../assets/icons/clock.svg" class="skills-img no-highlight invert-img">
-                        <span class="py-2">3 years experience</span>
+                        <img src="../../assets/icons/clock.svg" class="skills-img no-highlight filter-img-white">
+                        <span class="py-2">4 Years Experience</span>
                     </div>
                     <div fxLayout="column" fxLayoutAlign="center center" fxFlex fxFlex.lt-md="50">
-                        <img src="../../assets/icons/pencil.svg" class="skills-img no-highlight invert-img">
-                        <span class="py-2">creative</span>
+                        <img src="../../assets/icons/pencil.svg" class="skills-img no-highlight filter-img-white">
+                        <span class="py-2">Creative</span>
                     </div>
                     <div fxLayout="column" fxLayoutAlign="center center" fxFlex fxFlex.lt-md="50">
-                        <img src="../../assets/icons/crop.svg" class="skills-img no-highlight invert-img">
-                        <span class="py-2">detail oriented</span>
+                        <img src="../../assets/icons/crop.svg" class="skills-img no-highlight filter-img-white">
+                        <span class="py-2">Detail Oriented</span>
                     </div>
                     <div fxLayout="column" fxLayoutAlign="center center" fxFlex fxFlex.lt-md="50">
-                        <img src="../../assets/icons/speach-bubble.svg" class="skills-img no-highlight invert-img">
-                        <span class="py-2">strong communicator</span>
+                        <img src="../../assets/icons/speach-bubble.svg" class="skills-img no-highlight filter-img-white">
+                        <span class="py-2">Strong Communicator</span>
                     </div>
                 </div>
-        
-                <body class="blurb pl-3 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </body>
-        
-                <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="0.4rem" class="w-100 mt-3">
-                    <span class="weight-500">Languages:</span>
-                    <div *ngFor="let lang of languages" class="chip no-highlight  mt-2">{{ lang }}</div>
+
+                <div class="blurb pl-3 mt-4 w-100">
+                    <div>Hi, I'm Kimberley, a 4th year computer engineering student at the University of Waterloo.  I enjoy bringing designs to life and specialize in front-end development.  I'm continually looking for opportunities to enhance my skills in this area and potentially dive into mobile application development.</div>
+                    <div class="mt-2">Outside of programming, I enjoy exploring various forms of art, including drawing, video editing, filming, and digital/analog photography. I also enjoy spending time outdoors, listening to music and exploring new trails.</div>
                 </div>
-        
-                <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="0.4rem" class="w-100 mt-3">
-                    <span class="weight-500">Frameworks:</span>
-                    <div *ngFor="let frame of frameworks" class="chip no-highlight  mt-2">{{ frame }}</div>
+                
+                <div fxLayout="row" fxLayoutAlign="start start" class="w-100 mt-2">
+                    <span class="weight-500 mt-2 mr-2">Languages:</span>
+                    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="0.4rem" class="w-100">
+                        <div class="chip no-highlight mt-2" matTooltip="HTML/AngularJS"><fa-icon [icon]="faHtml5" size="1x"></fa-icon> HTML/AngularJS</div>
+                        <div class="chip no-highlight mt-2" matTooltip="CSS/SCSS"><fa-icon [icon]="faCss3Alt" size="1x"></fa-icon> CSS/SCSS</div>
+                        <div class="chip no-highlight mt-2" matTooltip="JavaScript/TypeScript"><fa-icon [icon]="faJsSquare" size="1x"></fa-icon> JavaScript/TypeScript</div>
+                        <div class="chip no-highlight mt-2" matTooltip="C/C++">C/C++</div>
+                        <div class="chip no-highlight mt-2" matTooltip="Java"><fa-icon [icon]="faJava" size="1x"></fa-icon> Java</div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start" class="w-100 mt-2">
+                    <span class="weight-500 mt-2 mr-2">Frameworks:</span>
+                    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="0.4rem" class="w-100">
+                        <div class="chip no-highlight mt-2" matTooltip="Angular"><fa-icon [icon]="faAngular" size="1x"></fa-icon> Angular</div>
+                        <div class="chip no-highlight mt-2" matTooltip="Bootstrap"><fa-icon [icon]="faBootstrap" size="1x"></fa-icon> Bootstrap</div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start" class="w-100 mt-2">
+                    <span class="weight-500 mt-2 mr-2">Tools:</span>
+                    <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="0.4rem" class="w-100">
+                        <div class="chip no-highlight mt-2" matTooltip="Figma"><fa-icon [icon]="faFigma" size="1x"></fa-icon> Figma</div>
+                        <div class="chip no-highlight mt-2" matTooltip="Docker"><fa-icon [icon]="faDocker" size="1x"></fa-icon> Docker</div>
+                        <div class="chip no-highlight mt-2" matTooltip="Linux"><fa-icon [icon]="faLinux" size="1x"></fa-icon> Linux</div>
+                        <div class="chip no-highlight mt-2" matTooltip="Google Fonts"><fa-icon [icon]="faGoogle" size="1x"></fa-icon> Google Fonts</div>
+                    </div>
                 </div>
         
             </div>

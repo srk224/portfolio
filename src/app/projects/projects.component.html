@@ -14,24 +14,29 @@
             
                     <div fxLayout="row wrap" fxLayoutGap="0.4rem" class="no-highlight">
                         <div class="chip {{project.class}} no-highlight mt-2" *ngFor="let chip of project.chips" matTooltip="{{ chip }}">{{ chip }}</div>
-                        <div *ngIf="project.class === 'portfolio'" class="chip {{project.class}} no-highlight mt-2" matTooltip="Angular Application"><fa-icon [icon]="faAngular" size="1x"></fa-icon> Angular Application</div>
+                        <div *ngIf="project.class === 'saver' || project.class === 'portfolio'" class="chip {{project.class}} no-highlight mt-2" matTooltip="Google Fonts"><fa-icon [icon]="faGoogle" size="1x"></fa-icon> Google Fonts</div>
                         <div *ngIf="project.class === 'saver'" class="chip {{project.class}} no-highlight mt-2" matTooltip="MacOS Compatible"><fa-icon [icon]="faApple" size="1x"></fa-icon> MacOS Compatible</div>
                         <div class="chip {{project.class}} no-highlight mt-2"><fa-icon [icon]="faFigma" size="1x" matTooltip="Figma"></fa-icon></div>
                         <div *ngIf="project.class === 'spotify'" class="chip {{project.class}} no-highlight mt-2" matTooltip="Spotify"><fa-icon [icon]="faSpotify" size="1x"></fa-icon></div>
+                        <ng-container *ngIf="project.class === 'portfolio'">
+                            <div class="chip {{project.class}} no-highlight mt-2" matTooltip="Angular Application"><fa-icon [icon]="faAngular" size="1x"></fa-icon> Angular Application</div>
+                            <div class="chip {{project.class}} no-highlight mt-2" matTooltip="Google Domains"><fa-icon [icon]="faGoogle" size="1x"></fa-icon> Google Domains</div>
+                            <div class="chip {{project.class}} no-highlight mt-2" matTooltip="AWS"><fa-icon [icon]="faAws" size="1x"></fa-icon></div>
+                        </ng-container>
                     </div>
             
                     <div class="blurb {{project.class}}-blk pl-3 mt-2">
                         {{ project.blurb }}
                     </div>
-                    
-                    <div class="mt-2">
+                        
+                    <!-- <div class="mt-2">
                         <a href="{{ project.github }}" target="_blank">
                             <fa-icon [icon]="faGithub" size="lg"></fa-icon>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="visuals" fxFlex="50" fxFlex.lt-md="100" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.5rem">
-                    <video *ngIf="project.class === 'saver' || project.class === 'spotify'; else noVideo" preload loop autoplay muted id="video" webkit-playsinline="" playsinline="" (click)="openDialog(project.class, 0, true)">
+                    <video *ngIf="project.class === 'saver' || project.class === 'spotify'; else noVideo" preload loop autoplay muted id="video" webkit-playsinline="" playsinline="" (click)="openDialog(project.class, 0, true)" class="transition-short">
                         <source src="{{ project.video }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -39,7 +44,7 @@
                         <img src="{{ project.video }}" (click)="openDialog(project.class, 0, true)" class="no-video">
                     </ng-template>
                     <div fxLayout="row" fxLayoutGap="0.2rem" fxLayoutAlign="center center" class="img-holder">
-                        <img *ngFor="let imgInfo of project.imgInfo; index as index" fxFlex="25" src="{{ imgInfo.img }}" (click)="openDialog(project.class, index, false)" class="project-img no-highlight">
+                        <img *ngFor="let imgInfo of project.imgInfo; index as index" fxFlex="25" src="{{ imgInfo.img }}" (click)="openDialog(project.class, index, false)" class="project-img no-highlight transition-short">
                     </div>
                 </div>
         

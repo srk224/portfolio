@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { ImageDialogComponent } from '../image-dialog/image-dialog.component';
 import { project, ProjectsService } from './projects.service'
-import { faGithub, faFigma, faSpotify, faAngular, faApple } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFigma, faSpotify, faAngular, faApple, faAws, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -15,6 +15,8 @@ export class ProjectsComponent implements OnInit {
   public faSpotify = faSpotify;
   public faAngular = faAngular;
   public faApple = faApple;
+  public faAws = faAws;
+  public faGoogle = faGoogle;
 
   public projects: project[];
 
@@ -34,7 +36,8 @@ export class ProjectsComponent implements OnInit {
     dialogConfig.data = {project: project, index: index, isVideo: isVideo,};
     dialogConfig.hasBackdrop = true;
     dialogConfig.backdropClass = 'backdropBackground';
-    //NOTE: figure this out...
+    dialogConfig.autoFocus = false;
+    //TODO: get back to this...
     // dialogConfig.position = {top: '5%'};
 
     this.dialog.open(ImageDialogComponent, dialogConfig);

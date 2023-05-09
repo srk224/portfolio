@@ -22,35 +22,34 @@ export class ExperienceComponent implements OnInit {
   public Experience: experienceData[] = [
     {
       logo: "dockstore",
-      title: "Front-end Developer",
+      title: "Front-End Software Developer",
       company: "Ontario Institute for Cancer Research",
       location: "Toronto, ON",
       date: "Jan. 2023 - Apr. 2023",
       bulletPoints: [
-        "Composed detailed test suites and worked closely",
-        "Investigated user reported bugs for weekly triaging with",
-        "Performed data analysis for audit work reviewing a",
+        "Designed & implemented widgets for redesigned Dashboard landing while prioritizing page responsiveness",
+        "Implemented UI improvements including component refactoring, search result drop-downs, persistent collapsible panel states",
+        "Updated unit and E2E tests for stable integration",
       ],
       toolTip: "Ontario Institute for Cancer Research - Dockstore",
     },
     {
       logo: "dockstore",
-      title: "Front-end Developer",
+      title: "Front-End Software Developer",
       company: "Ontario Institute for Cancer Research",
       location: "Toronto, ON",
       date: "Jan. 2022 - Apr. 2022",
       bulletPoints: [
-        "Assisted in complete platform UI redesign",
-        "Updated and created new components to reflect new design",
-        "Introduced global changes",
-        "## PRs and closed ## tickets",
+        "Implemented site-wide changes to advance complete UI redesign of platform",
+        "Implemented UI components such as user information pages, personal account sidebars, and navigation sidebars",
+        "Maintained unit tests for updated code",
       ],
       toolTip: "Ontario Institute for Cancer Research - Dockstore",
     },
     {
       logo: "carta",
       title: "QA Analyst",
-      company: "Carta Maple Technologies",
+      company: "Carta",
       location: "Kitchener/Waterloo, ON",
       date: "May 2021 - Aug. 2021",
       bulletPoints: [
@@ -58,7 +57,7 @@ export class ExperienceComponent implements OnInit {
         "Weekly bug report triaging, assisted with troubleshooting & root causes",
         "Data analysis for audit work reviewing user NPS scores & support tickets",
       ],
-      toolTip: "Carta Maple Technologies",
+      toolTip: "Carta",
     },
     {
       logo: "hellohire",

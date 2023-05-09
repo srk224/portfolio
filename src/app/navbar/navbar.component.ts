@@ -55,7 +55,7 @@ export class NavbarComponent implements OnInit {
   public welcomeBar: welcome[] = [
     {
       displayText: "Welcome",
-      language: "Latin",
+      language: "English",
     },
     {
       displayText: "bienvenidas",
@@ -139,7 +139,7 @@ export class NavbarComponent implements OnInit {
     },
     {
       displayText: "Welcome",
-      language: "Latin",
+      language: "English",
     },
     {
       displayText: "bienvenidas",
@@ -226,10 +226,14 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    var toggle = document.getElementById("theme-toggle");
     var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     if (storedTheme) {
-      document.documentElement.setAttribute('data-theme', storedTheme)
+      // Set theme from stored or preferences
+      document.documentElement.setAttribute('data-theme', storedTheme);
+      this.isLightMode = storedTheme === "light" ? true : false;
+    } else {
+      // If no stored theme or preference, default to light theme
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }
 
@@ -237,9 +241,9 @@ export class NavbarComponent implements OnInit {
     this.currentTheme = document.documentElement.getAttribute("data-theme");
 
     this.targetTheme = this.currentTheme === "light" ? "dark" : 'light';
-    this.isLightMode = this.currentTheme === "light" ? true : false;
-
-    document.documentElement.setAttribute('data-theme', this.targetTheme)
+    
+    document.documentElement.setAttribute('data-theme', this.targetTheme);
+    this.isLightMode = this.currentTheme === "light" ? false : true;
     localStorage.setItem('theme', this.targetTheme);
   }
 

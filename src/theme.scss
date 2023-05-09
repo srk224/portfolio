@@ -13,8 +13,11 @@ html[data-theme='dark'] {
     --secondary: #143AFF;
     --background-color: #121212;
     --progress-container: #242424;
-    .invert-img {
-        filter: invert(100%);
-        -webkit-filter: invert(100%);
+    .filter-img-white {
+        filter: brightness(0%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(128deg) brightness(103%) contrast(102%);
+        -webkit-filter: brightness(0%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(128deg) brightness(103%) contrast(102%);
+    }
+    .accent-on-dark {
+        color: $accent;
     }
 }

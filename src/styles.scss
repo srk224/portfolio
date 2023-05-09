@@ -41,6 +41,8 @@ h1 {
     line-height: 4rem;
     margin: 1.2rem;
     text-align: center;
+    font-weight: bold;
+    -webkit-font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
@@ -70,8 +72,8 @@ h3, .accent-font {
 }
 
 .no-highlight {
-    -webkit-user-select: none;
-    -ms-user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
     user-select: none;
 }
 
@@ -93,18 +95,27 @@ h3, .accent-font {
     border: var(--main) solid 1.5px;
     border-radius: 0.9rem;
     padding: 0.25rem 0.7rem;
-    transition: 0.2s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    -ms-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .chip:hover, .main-color-button:hover{
     cursor: pointer;
     color: var(--background-color);
     background-color: var(--main);
+}
+
+.transition-short {
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 mat-icon {
@@ -115,12 +126,12 @@ mat-icon {
     transition: 0.2s ease-in-out;
 }
 
-// Section link
+/* Section link */
 .section-header:hover .section-link {
     display: inline-block;
 }
 
-.section-link {
+.section-header mat-icon.section-link {
     display: none;
 }
 
@@ -133,12 +144,6 @@ mat-icon {
     padding: 0rem 5rem;
 }
 
-@media only screen and (max-width: 500px) {
-    /* xs */
-    .container {
-      margin: 0;
-    }
-  }
 
 button.mat-stroked-button, .mat-stroked-button:not(.mat-button-disabled) {
     max-width: min-content;
@@ -163,7 +168,18 @@ mat-stroked-button:hover {
     background-color: var(--background-color);
 }
 
+a {
+    color: var(--main);
+}
+
 a:visited { 
     text-decoration: none; 
     color: var(--main); 
+}
+
+@media only screen and (max-width: 500px) {
+    /* xs */
+    .container {
+        margin: 0;
+    }
 }
