@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { ImageDialogComponent } from '../image-dialog/image-dialog.component';
 import { project, ProjectsService } from './projects.service'
-import { faGithub, faFigma, faSpotify, faAngular, faApple, faAws, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFigma, faSpotify, faAngular, faApple, faAws, faGoogle, faHtml5, faCss3Alt, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -17,7 +17,9 @@ export class ProjectsComponent implements OnInit {
   public faApple = faApple;
   public faAws = faAws;
   public faGoogle = faGoogle;
-
+  public faHtml5 = faHtml5
+  public faCss3Alt = faCss3Alt;
+  public faJsSquare = faJsSquare;
   public projects: project[];
 
   constructor(

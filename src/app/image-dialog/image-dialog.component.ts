@@ -34,7 +34,6 @@ export class ImageDialogComponent implements OnInit {
   }
 
   back() {
-    console.log("meep")
     this.index = this.index === 0 ? 3 : ((this.index - 1) % 4);
     this.updateDisplay();
   }

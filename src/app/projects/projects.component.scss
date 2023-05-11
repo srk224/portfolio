@@ -69,15 +69,16 @@ h2 {
     cursor: pointer;
 }
 
-video, .no-video {
+video {
     border-radius: 0.4rem;
+    width: 100%;
 }
 
-video, .no-video, .img-holder {
+.video-container, .img-holder {
     width: 80%;
 }
 
-.no-video {
+video.portfolio {
     border: 0.08rem solid var(--main);
 }
 
@@ -85,8 +86,41 @@ video, .no-video, .img-holder {
     border-radius: 0.4rem;
 }
 
-.project-img:hover, video:hover {
+.img-container:hover, .video-container:hover {
     cursor: pointer;
-    filter: brightness(60%);
-    -webkit-filter: brightness(60%);
+}
+
+.img-container:hover img, .video-container:hover video {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+// Styles to display pop-up icon on video and image hover
+.visuals, .img-container, .video-container {
+    position: relative;
+}
+
+.video-container:hover .hidden-icon {
+    display: block;
+}
+
+.img-container:hover .hidden-icon-sm {
+    display: block;
+}
+
+.hidden-icon, .hidden-icon-sm {
+    position: absolute;
+    display: none;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hidden-icon {
+    top: 40%;
+    left: 46%;
+}
+
+.hidden-icon-sm {
+    font-size: 1rem;
+    top: 35%;
+    left: 42%;
 }

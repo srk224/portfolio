@@ -20,4 +20,7 @@ html[data-theme='dark'] {
     .accent-on-dark {
         color: $accent;
     }
+    .chip.accent-on-dark {
+        border-color: $accent;
+    }
 }
