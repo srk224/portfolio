@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHtml5, faJava, faCss3Alt, faJsSquare, faBootstrap, faAngular, faDocker, faFigma, faLinux, faNpm, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faJava, faCss3Alt, faJsSquare, faBootstrap, faAngular, faDocker, faFigma, faLinux, faNpm, faGoogle, faAws } from '@fortawesome/free-brands-svg-icons';
 
 interface skillHighlight {
   displayText: string;
@@ -23,6 +23,7 @@ export class AboutMeComponent implements OnInit {
   public faLinux = faLinux;
   public faNpm = faNpm;
   public faGoogle = faGoogle;
+  public faAws = faAws;
 
   public skillHighlights: skillHighlight[] = [
     {
