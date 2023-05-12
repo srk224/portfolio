@@ -68,7 +68,7 @@ export class ExperienceComponent implements OnInit {
       bulletPoints: [
         "End-to-end & API testing to ensure stability before deploys",
         "Detailed bug reports, worked with dev team to troubleshoot & resolve",
-        "Performed administrative duties including creating 100+ users, 30 virtualevent spaces",
+        "Performed administrative duties including creating 100+ users, 30 virtual event spaces",
       ],
       toolTip: "Hellohire (Formerly Showfloor)",
     },
