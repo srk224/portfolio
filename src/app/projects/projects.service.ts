@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faFigma, faSpotify, faAngular, faApple, faAws, faGoogle, faFontAwesomeFlag, faHtml5, faCss3Alt, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFigma, faSpotify, faAngular, faApple, faAws, faGoogle, faFontAwesomeFlag, faHtml5, faCss3Alt, faJsSquare, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
 export interface project {
   class: string,
@@ -114,6 +114,10 @@ export class ProjectsService {
     {
       icon: faAngular,
       text: "Angular",
+    },
+    {
+      icon: faBootstrap,
+      text: "Bootstrap",
     },
     {
       icon: faAws,
