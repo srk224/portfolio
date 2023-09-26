@@ -42,8 +42,7 @@ h1 {
     line-height: 4rem;
     margin: 1.2rem;
     text-align: center;
-    font-weight: bold;
-    -webkit-font-weight: bold;
+    font-weight: 100;
 }
 
 @media screen and (max-width: 800px) {
@@ -59,6 +58,7 @@ h2 {
 
 h1, h2 {
     font-family: 'Bungee Shade', sans-serif;
+    font-weight: 100;
 }
 
 h3, .accent-font {
