@@ -1,29 +1,19 @@
 import './experience.css'
-import ScrollAnimation from 'react-animate-on-scroll';
 
 function Experience(props) { 
     return (
-        <div className="experience">
-            
-            <div className="heading">
-            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
-                <h1 class="experience_heading">EXPERIENCE</h1>
-            </ScrollAnimation>
-            </div>  
+        <div className="experience">    
             <div className="experience_card">
-                <div className="experience_card1">
-                    <h1 class="compant_name">HomeTrust</h1>
-                    <h2 class="role">Generative AI Intern</h2>
-                    <h5 class="date">2018-2022</h5>
+                <div class="experience_card1">
+                    <h1 class="company_name">{props.role}</h1>
+                    <h4 class="role">{props.company_name} <span class="date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {props.date}</span></h4>
                     <ul>
-                        <li>Something Something</li>
-                        <li>soemghingMore of something anf </li>
-                        <li>soemghingMore of something anf and more of something</li>
+                        <li>{props.bullet1}</li>
+                        <li>{props.bullet2}</li>
+                        <li>{props.bullet3}</li>
                     </ul>
                 </div>
-                
             </div>
-
         </div>
 
     );

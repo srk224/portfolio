@@ -4,11 +4,73 @@
     font-style: bold;
     font-size: 220px;
     color: rgb(235, 235, 235);
+    text-align: center;
 }
 
 .experience_card{
-    border-color: 2px solid black;
-    box-sizing: border-box;
+   margin-right:20%;
+   margin-left:25%;
 }
 
-..
+.company_name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    color: #333333;
+    font-size: 60px;
+}
+
+.role{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    color: #333333;
+    font-size: x-large;
+}
+
+li{
+ color: #333333;
+    font-size: 20px;
+    padding: 10px;   
+}
+
+
+.experience_card1{
+    /* border-style: solid ; */
+    /* border-color: #333333; */
+    border-radius: 6%;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.experience_card1:hover {
+    background-color:rgb(245, 244, 244);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .experience_card2{
+    /* border-style: solid ; */
+    /* border-color: #333333; */
+    border-radius: 6%;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.experience_card2:hover {
+    background-color:rgb(245, 244, 244);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
