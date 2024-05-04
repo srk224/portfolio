@@ -1,6 +1,7 @@
 import './about.css';
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll';
+import React from 'react';
 
 function About() {
   return (
