@@ -10,13 +10,14 @@
 
 .about{
     position: relative;
+    margin-top: 30vh;
     
 }
 
 .about_me{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: bold;
-    font-size: 30px;
+    font-size: 22px;
     color: #333333;
     position: absolute;
   top: 30%;
@@ -24,4 +25,10 @@
   transform: translate(-50%, -50%);
 }
 
+.line{
+    margin-top: 2%;
+    width: 92%;
+    border: 2px solid black;
+    border-radius: 4px;
 
+}

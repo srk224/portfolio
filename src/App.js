@@ -7,12 +7,17 @@ import Project_Heading from './project_heading.js';
 import Project from './project.js';
 import Contact from './contact_h.js';
 import Resume from './Resume.js'
+import { Cursor } from "react-custom-cursors";
+import "react-custom-cursors/dist/index.css";
+
+
 
 function App() {
   return (
     <div className="App">
+      <Cursor hasCursor = "false" color ="#000000" speed = "fast" size ="sm" animation='spin'/>
       <Name />
-      <Resume/>
+      {/* <Resume/> */}
       <About />
       <Exp_h/>
       <Experience role = "Software Engineer Interm" company_name="Manulife" date = "May 2024 - August 2024" bullet1=" Designed and implemented an automated PII redaction system using Azure Functions, Blob Storage, and Python. Automated Azure resource deployment and management using Terraform and integrating Azure RBAC for security." bullet2="Integrated Azure AI OCR capabilities to automate text extraction applying advanced data engineering practices.
