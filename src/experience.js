@@ -15,6 +15,7 @@ function Experience(props) {
                 </div>
             </div>
             <br />
+            <hr className='line-experience'></hr>
             <br/>
         </div>
 

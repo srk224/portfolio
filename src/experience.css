@@ -13,18 +13,15 @@
 }
 
 .company_name{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #333333;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .role{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #333333;
-    font-size: x-large;
-}
+    font-size: 18px;}
 
 li{
  color: #333333;
@@ -32,45 +29,32 @@ li{
     padding: 10px;   
 }
 
+.line-experience{
+    margin-top: 2%;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 4px;
 
-.experience_card1{
-    /* border-style: solid ; */
-    /* border-color: #333333; */
-    border-radius: 6%;
-    padding: 2%;
-    background: rgba(255, 255, 255, 0.12);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.experience_card1:hover {
+
+/* .experience_card1{ */
+    /* border-style: solid ; */
+    /* border-color: #333333; */
+    /* border-radius: 6%; */
+    /* padding: 2%; */
+    /* background: rgba(255, 255, 255, 0.12); */
+/* border-radius: 16px; */
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+/* backdrop-filter: blur(5px); */
+/* -webkit-backdrop-filter: blur(5px); */
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
+/* } */
+
+/* .experience_card1:hover {
     background-color:rgb(245, 244, 244);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .experience_card2{
-    /* border-style: solid ; */
-    /* border-color: #333333; */
-    border-radius: 6%;
-    padding: 2%;
-    background: rgba(255, 255, 255, 0.12);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.experience_card2:hover {
-    background-color:rgb(245, 244, 244);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+  } */
