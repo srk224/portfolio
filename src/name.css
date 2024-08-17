@@ -10,7 +10,8 @@
 }
 
 .namee{
-    font-family: "Cedarville Cursive", cursive;
+    /* font-family: "Cedarville Cursive", cursive; */
+    font-family : poppins;
   font-weight: 400;
   font-style: normal;
   font-size: 70px;
