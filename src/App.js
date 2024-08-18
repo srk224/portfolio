@@ -3,18 +3,16 @@ import Name from './name.js';
 import About from './about.js';
 import Experience from './experience.js';
 import Exp_h from './exp_h.js';
-import Project_Heading from './project_heading.js';
-import Project from './project.js';
 import Contact from './contact_h.js';
 import Resume from './Resume.js'
 import { Cursor } from "react-custom-cursors";
 import "react-custom-cursors/dist/index.css";
 
-
 function App() {
   return (
     <div className="App">
-      <Cursor hasCursor = "false" color ="#000000" speed = "fast" size ="sm" />
+  
+      {/* <Cursor hasCursor = "false" color ="#000000" speed = "fast" size ="sm" /> */}
       <Resume/>
       <Name />
       <About />
