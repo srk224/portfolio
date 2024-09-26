@@ -7,7 +7,7 @@ function Resume(){
     className = "resume_link"
     target="_blank" 
     rel="noreferrer noopener" 
-    href = "https://drive.google.com/file/d/1gl1bzU4ghHKE9IpI-ptMq2Cjxl7mjd-b/view?usp=sharing"
+    href = "https://drive.google.com/file/d/1321-yFiKTWoqTgYco8ug5nE4HxCAHch7/view?usp=sharing"
     whileHover={{ scale: 1.1 , rotate: 360}}
     whileTap={{ scale: 0.9 }}>
     
