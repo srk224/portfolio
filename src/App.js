@@ -5,14 +5,45 @@ import Experience from './experience.js';
 import Exp_h from './exp_h.js';
 import Contact from './contact_h.js';
 import Resume from './Resume.js'
-import { Cursor } from "react-custom-cursors";
 import "react-custom-cursors/dist/index.css";
+import { useEffect, useState } from 'react';
+
+function Ball() {
+  const [position, setPosition] = useState({
+    top: Math.random() * 100 + '%',
+    left: Math.random() * 100 + '%',
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPosition({
+        top: Math.random() * 100 + '%',
+        left: Math.random() * 100 + '%',
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div
+      className="ball"
+      style={{
+        top: position.top,
+        left: position.left,
+      }}
+    />
+  );
+}
+
+
 
 function App() {
+  const balls = Array.from({ length: 10 }); // Create an array with 10 items
+
   return (
     <div className="App">
-  
-      {/* <Cursor hasCursor = "false" color ="#000000" speed = "fast" size ="sm" /> */}
+      <div className="page-content">
       <Resume/>
       <Name />
       <About />
@@ -27,6 +58,10 @@ function App() {
 " bullet2="• Integrated AEM with internal servers and databases using AJAX and cookies for enhanced user interaction" bullet3="• Managed tasks and tickets through JIRA for streamlined project management and accountability."/>
       <Experience role="Frontend Developer Intern" company_name="Purolator" date="September 2023 - December 2023" bullet1="• Developed and maintained the company’s intranet platform overseeing application and software solutions." bullet2="• Designed and developed over 40+ frontend pages for marketing purposes and Intranet using Orchestra CMS." bullet3="• Worked with various teams to manage stakeholder requirements for upcoming website projects and e-campaigns."/>
       <Contact />
+      </div>
+      {balls.map((_, index) => (
+        <Ball key={index} />
+      ))}
     </div>
   );
 }

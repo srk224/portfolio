@@ -1,0 +1,25 @@
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Keep this to ensure balls float within the viewport */
+  background-color: #f0f0f0;
+}
+
+.page-content {
+  position: relative;
+  padding: 20px; /* Padding for content */
+  z-index: 1; /* Ensures content is above floating balls */
+  overflow-y: scroll; /* Enables scrolling for the content area */
+  height: calc(100vh - 40px); /* Adjust based on content padding */
+}
+
+.ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 0; /* Balls are behind the content */
+  transition: top 3s ease, left 3s ease;
+}
