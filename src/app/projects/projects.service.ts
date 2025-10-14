@@ -26,48 +26,44 @@ export interface chipsInfo {
   providedIn: 'root',
 })
 export class ProjectsService {
-  public screensaverChips: chipsInfo[] = [
+  public groqcessibleChips: chipsInfo[] = [
     {
-      icon: faHtml5,
-      text: "HTML",
-    },
-    {
-      icon: faCss3Alt,
-      text: "CSS",
+      icon: null,
+      text: "Python",
     },
     {
       icon: null,
-      text: "JavaScript",
+      text: "Flask",
     },
     {
       icon: null,
-      text: "Swift",
+      text: "React",
     },
     {
       icon: null,
-      text: "WKWebKit",
+      text: "Groq API",
     },
     {
-      icon: faGoogle,
-      text: "Google Fonts",
+      icon: null,
+      text: "Play AI",
     },
     {
-      icon: faApple,
-      text: "MacOS Compatible",
+      icon: null,
+      text: "Whisper STT",
     },
     {
-      icon: faFigma,
-      text: "",
+      icon: null,
+      text: "Computer Vision",
+    },
+    {
+      icon: null,
+      text: "Hackathon Winner",
     },
   ];
-  public spotifyChips: chipsInfo[] = [
+  public codeCureChips: chipsInfo[] = [
     {
-      icon: faHtml5,
-      text: "HTML",
-    },
-    {
-      icon: faCss3Alt,
-      text: "CSS",
+      icon: null,
+      text: "Python",
     },
     {
       icon: faJsSquare,
@@ -75,151 +71,144 @@ export class ProjectsService {
     },
     {
       icon: null,
-      text: "OAuth",
+      text: "Azure OpenAI",
     },
-    {
-      icon: faFigma,
-      text: "",
-    },
-    {
-      icon: faSpotify,
-      text: "Spotify Web API",
-    },
-  ];
-  public portfolioChips: chipsInfo[] = [
     {
       icon: null,
-      text: "TypeScript",
+      text: "VS Code Extension",
     },
     {
-      icon: faHtml5,
-      text: "HTML",
+      icon: null,
+      text: "AI-Powered",
     },
     {
-      icon: faCss3Alt,
-      text: "SCSS",
-    },
-    {
-      icon: faGoogle,
-      text: "Google Fonts",
-    },
-    {
-      icon: faFontAwesomeFlag,
-      text: "Font Awesome",
-    },
-    {
-      icon: faFigma,
-      text: "",
-    },
-    {
-      icon: faAngular,
-      text: "Angular",
-    },
-    {
-      icon: faBootstrap,
-      text: "Bootstrap",
-    },
-    {
-      icon: faAws,
-      text: "Amplify",
-    },
-    {
-      icon: faAws,
-      text: "S3",
-    },
-    {
-      icon: faAws,
-      text: "Route 53",
-    },
-    {
-      icon: faGoogle,
-      text: "Google Domains",
+      icon: null,
+      text: "Code Analysis",
     },
   ];
 
-  public saverImgInfo: imgInfo[] = [
+  public voiceNewsChips: chipsInfo[] = [
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/screensaver/spreadsheet.png",
-      imgText: "Spreadsheet planning of affirmations to use for screensaver.",
+      icon: null,
+      text: "React",
     },
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/screensaver/figma-mocks.png",
-      imgText: "Figma board of design process planning colour schemes and creating various gradient effects.",
+      icon: null,
+      text: "Alan AI",
     },
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/screensaver/settings.png",
-      imgText: "Final screensaver installed on macOS Ventura 13.0.1.",
+      icon: null,
+      text: "Material UI",
     },
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/screensaver/screensaver.png",
-      imgText: "A look at the screensaver during inactivity running on macOS Ventura 13.0.1.",
-    }
+      icon: null,
+      text: "Voice Control",
+    },
+    {
+      icon: null,
+      text: "Accessibility",
+    },
+    {
+      icon: null,
+      text: "Vercel",
+    },
   ];
 
-  public spotifyImgInfo: imgInfo[] = [
+  public uwaterlooAIChips: chipsInfo[] = [
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/spotify/login-page.png",
-      imgText: "A look at the login page using OAuth for Spotify authentication.",
+      icon: null,
+      text: "Python",
     },
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/spotify/top-artists.png",
-      imgText: "A view of my top artists and their generes, each entry links to the artist's Spotify page.  Time range is set to medium (aprox. last 6 months of data).",
+      icon: null,
+      text: "React",
     },
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/spotify/playlists.png",
-      imgText: "In addition to the top artists and tracks, there is a \"Profile\" page which displays the current user's playlists and followed artist.  Each entry links to the corresponding Spotify playlist or artist.",
+      icon: null,
+      text: "Node.js",
     },
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/spotify/figma.png",
-      imgText: "A glimpse into the design process for the UI of the app.  The dark theme shown above was inspired by the Spotify desktop app.",
-    }
+      icon: null,
+      text: "AI-Powered",
+    },
+    {
+      icon: null,
+      text: "Vercel",
+    },
+    {
+      icon: null,
+      text: "Jenkins CI/CD",
+    },
+    {
+      icon: null,
+      text: "Cloud Integration",
+    },
   ];
-  public portfilioImgInfo: imgInfo[] = [
+
+  public groqcessibleImgInfo: imgInfo[] = [
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/portfolio/figma-planning.png",
-      imgText: "Some of the first design iterations for the homepage and about me section.  This design is actually very similar to the final UI.",
+      img: "../../assets/work_logos/groq.png",
+      imgText: "Groqcessible: Voice-first app for the visually impaired to assess food quality and nutrition through AI conversation.",
     },
+  ];
+
+  public codeCureImgInfo: imgInfo[] = [
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/portfolio/figma.png",
-      imgText: "A brief overview of the design process for the rest website. Deep into implementation I continued to experiement with layouts, fonts, various design elements to achieve something I was content with.",
+      img: "../../assets/projects/codecure.png",
+      imgText: "Code Cure: AI-powered VS Code extension that automatically detects Python errors and provides intelligent patches.",
     },
+  ];
+
+  public voiceNewsImgInfo: imgInfo[] = [
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/portfolio/mobile-view.png",
-      imgText: "Mobile view was certainly a great consideration when implementing my website. A responsive layout is always something I keep in mind during any implementation.",
+      img: "../../assets/projects/newsmix.png",
+      imgText: "Voice-controlled news app with hands-free navigation for accessibility, built with React and Alan AI.",
     },
+  ];
+
+  public uwaterlooAIImgInfo: imgInfo[] = [
     {
-      img: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/portfolio/portfolio.png",
-      imgText: "Final look at my personal website on Chrome 112.0.5615.137 running on macOS Ventura 13.0.1.",
-    }
+      img: "../../assets/projects/uwaterlooai.png",
+      imgText: "UwaterlooAI: AI-powered assistant for University of Waterloo course, location, and service information.",
+    },
   ];
   
   public projects: project[] = [
     {
-      class: "saver",
-      title: "Positive Affirmations Screensaver",
-      video: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/screensaver/saver.mp4",
-      imgInfo: this.saverImgInfo,
-      chips: this.screensaverChips,
-      blurb: "With a stressful exam season approaching, I was motivated to create something to deliver a dose of positivity each day.  I've been using clock screensavers for years and decided to create a screensaver that not only displayed the time, but also provided positive words of affirmation, paired with a relaxing gradient to get me through those rough times.",
-      github: "https://github.com/KimberleyChong",
+      class: "groqcessible",
+      title: "Groqcessible - Hackathon Winner",
+      video: "",
+      imgInfo: this.groqcessibleImgInfo,
+      chips: this.groqcessibleChips,
+      blurb: "Voice-first app enabling visually impaired users to point their camera at food items and assess quality & nutrition via real-time AI conversation. Built using GroqAPI for ultra-fast inference, Whisper for speech-to-text, and PlayAI for text-to-speech in a React/Flask stack delivering responses in under 2 seconds. Won hackathon for innovative accessibility solution.",
+      github: "https://github.com/rsomanigroq/SnackOverflow",
     },
     {
-      class: "spotify",
-      title: "Spotify Wrapped Recreation",
-      video: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/spotify/spotify-video.mp4",
-      imgInfo: this.spotifyImgInfo,
-      chips: this.spotifyChips,
-      blurb: "Motivated by my love for music, Spotify, and the excitement of discovering my top artists and songs each year, I recreated my own version of Spotify Wrapped.  The UI is inspired by the desktop app, where each artist/song entry appears as if it belongs to one of your playlists.",
-      github: "https://github.com/KimberleyChong",
+      class: "codecure",
+      title: "Code Cure",
+      video: "",
+      imgInfo: this.codeCureImgInfo,
+      chips: this.codeCureChips,
+      blurb: "Developed an AI-powered VS Code extension in JavaScript specifically for Python developers. Automatically detects Python code errors in real-time and provides intelligent, context-aware patches using Azure OpenAI directly in the terminal. Streamlines debugging workflow and helps developers fix issues faster with AI-driven suggestions.",
+      github: "https://github.com/srk224/Hack-the-six",
     },
     {
-      class: "portfolio",
-      title: "Personal Website",
-      video: "https://kimberleychong-dev.s3.ca-central-1.amazonaws.com/public/portfolio/portfolio-video.mp4",
-      imgInfo: this.portfilioImgInfo,
-      chips: this.portfolioChips,
-      blurb: "I wanted to create a website of my own to showcase more of my personality and experience beyond a resume.  Truthfully, figuring out the UI was the most difficult part, I ventured back to my roots as an art student to really understand design principles for a balanced site.  I wanted the UI to be an accurate reflection of myself, minimal, and with some bright elements to it.",
-      github: "https://github.com/KimberleyChong",
+      class: "uwaterlooai",
+      title: "UwaterlooAI",
+      video: "",
+      imgInfo: this.uwaterlooAIImgInfo,
+      chips: this.uwaterlooAIChips,
+      blurb: "AI-powered assistant designed to provide seamless access to University of Waterloo's course, location, and service information. Features include AI-powered responses for precise answers, cloud integration hosted on Vercel for fast and scalable performance, real-time data for course schedules and dining hours, a modern responsive frontend with clean design, and a fully automated CI/CD pipeline using Jenkins for smooth deployment workflow.",
+      github: "https://github.com/srk224",
+    },
+    {
+      class: "voicenews",
+      title: "Voice Controlled News App",
+      video: "",
+      imgInfo: this.voiceNewsImgInfo,
+      chips: this.voiceNewsChips,
+      blurb: "Developed an accessibility-first news app with React for hands-free navigation, empowering differently-abled users. Integrated AlanAI for real-time voice interactions, allowing users to listen to headlines and open articles without touch. Used MaterialUI for a responsive user interface and deployed the app on Vercel. Control absolutely everything in the app using your voice.",
+      github: "https://github.com/srk224",
     }
   ];
 

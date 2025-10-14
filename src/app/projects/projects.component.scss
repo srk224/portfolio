@@ -22,50 +22,67 @@ h2 {
     vertical-align: middle;
 }
 
-.saver {
-    color: #E23557;
-    border-color: #E23557;
+.groqcessible {
+    color: #8B5CF6;
+    border-color: #8B5CF6;
 }
 
-.spotify {
-    color: #1DB954;
-    border-color: #1DB954;
+.codecure {
+    color: #3B82F6;
+    border-color: #3B82F6;
 }
 
-.portfolio {
-    color: var(--secondary);
-    border-color: var(--secondary);
+.uwaterlooai {
+    color: #10B981;
+    border-color: #10B981;
 }
 
-.saver-blk {
+.voicenews {
+    color: #F59E0B;
+    border-color: #F59E0B;
+}
+
+.groqcessible-blk {
     color: var(--main);
-    border-color: #E23557;
-}
-.spotify-blk {
-    color: var(--main);
-    border-color: #1DB954;
+    border-color: #8B5CF6;
 }
 
-.portfolio-blk {
+.codecure-blk {
     color: var(--main);
-    border-color: var(--secondary);
+    border-color: #3B82F6;
 }
 
-.chip.saver:hover {
+.uwaterlooai-blk {
+    color: var(--main);
+    border-color: #10B981;
+}
+
+.voicenews-blk {
+    color: var(--main);
+    border-color: #F59E0B;
+}
+
+.chip.groqcessible:hover {
     color: var(--background-color);
-    background-color: #E23557;    
+    background-color: #8B5CF6;
     cursor: pointer;
 }
 
-.chip.spotify:hover {
+.chip.codecure:hover {
     color: var(--background-color);
-    background-color: #1DB954;
+    background-color: #3B82F6;
     cursor: pointer;
 }
 
-.chip.portfolio:hover {
+.chip.uwaterlooai:hover {
     color: var(--background-color);
-    background-color: var(--secondary);
+    background-color: #10B981;
+    cursor: pointer;
+}
+
+.chip.voicenews:hover {
+    color: var(--background-color);
+    background-color: #F59E0B;
     cursor: pointer;
 }
 

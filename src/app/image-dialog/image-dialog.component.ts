@@ -29,12 +29,12 @@ export class ImageDialogComponent implements OnInit {
   }
 
   next() {
-    this.index = (this.index + 1) % 4;
+    this.index = (this.index + 1) % this.images.length;
     this.updateDisplay();
   }
 
   back() {
-    this.index = this.index === 0 ? 3 : ((this.index - 1) % 4);
+    this.index = this.index === 0 ? this.images.length - 1 : ((this.index - 1) % this.images.length);
     this.updateDisplay();
   }
 
@@ -43,15 +43,18 @@ export class ImageDialogComponent implements OnInit {
   }
 
   initializeImages(project: string) {
-    if (project === 'saver') {
+    if (project === 'groqcessible') {
       this.video = this.projectsService.projects[0].video;
-      this.images = this.projectsService.saverImgInfo;
-    } else if (project === 'spotify') {
+      this.images = this.projectsService.groqcessibleImgInfo;
+    } else if (project === 'codecure') {
       this.video = this.projectsService.projects[1].video;
-      this.images = this.projectsService.spotifyImgInfo;
-    } else {
+      this.images = this.projectsService.codeCureImgInfo;
+    } else if (project === 'voicenews') {
       this.video = this.projectsService.projects[2].video;
-      this.images = this.projectsService.portfilioImgInfo;
+      this.images = this.projectsService.voiceNewsImgInfo;
+    } else if (project === 'uwaterlooai') {
+      this.video = this.projectsService.projects[3].video;
+      this.images = this.projectsService.uwaterlooAIImgInfo;
     }
   }
 

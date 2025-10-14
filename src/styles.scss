@@ -21,10 +21,53 @@
     filter: saturate(3);
 }
 
-html, body { 
+html, body {
     margin: 0rem;
-    height: fit-content; 
+    height: fit-content;
     scroll-behavior: smooth;
+    cursor: none;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $accent;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transition: transform 0.15s ease-out, width 0.15s ease-out, height 0.15s ease-out;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+
+.custom-cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: $accent;
+    border-radius: 50%;
+    transition: width 0.15s ease-out, height 0.15s ease-out;
+}
+
+.custom-cursor.hover {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(239, 35, 60, 0.1);
+}
+
+.custom-cursor.hover::before {
+    width: 10px;
+    height: 10px;
+}
+
+.custom-cursor.click {
+    transform: translate(-50%, -50%) scale(0.8);
 }
 
 body, mat-expansion-panel div { 

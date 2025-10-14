@@ -1,3 +1,5 @@
+
+
 <div class="container">
     <h2 class="section-header mb-3">3. Projects<mat-icon (click)="projectsLink()" class="section-link pointer ml-3">link</mat-icon></h2>
 
@@ -6,9 +8,10 @@
             <div fxLayout fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutGap="2rem" *ngFor="let project of projects" class="entry">
                 <div fxFlex="50" fxFlex.lt-md="100">
                     <div fxLayout fxLayoutAlign="start center" fxLayoutGap="0.5rem" class="mb-2 mt-3">
-                        <mat-icon *ngIf="project.class === 'saver'" class="saver no-highlight">laptop_mac</mat-icon>
-                        <fa-icon *ngIf="project.class === 'spotify'" [icon]="faSpotify" size="2x" class="no-highlight spotify"></fa-icon>
-                        <mat-icon *ngIf="project.class === 'portfolio'" class="logo portfolio no-highlight">auto_awesome</mat-icon>
+                        <mat-icon *ngIf="project.class === 'groqcessible'" class="groqcessible no-highlight">visibility</mat-icon>
+                        <mat-icon *ngIf="project.class === 'codecure'" class="codecure no-highlight">code</mat-icon>
+                        <mat-icon *ngIf="project.class === 'uwaterlooai'" class="uwaterlooai no-highlight">psychology</mat-icon>
+                        <mat-icon *ngIf="project.class === 'voicenews'" class="voicenews no-highlight">record_voice_over</mat-icon>
                         <div class="title {{project.class}}">{{ project.title }}</div>
                     </div>
             

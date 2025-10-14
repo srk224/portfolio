@@ -22,6 +22,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImageDialogComponent } from './image-dialog/image-dialog.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ImageDialogComponent } from './image-dialog/image-dialog.component';
     ExperienceComponent,
     FooterComponent,
     ImageDialogComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
